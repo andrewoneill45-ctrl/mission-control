@@ -97,7 +97,7 @@ describe('Mission Control pages', () => {
   });
   it('Connections renders canvas', async () => {
     const { container } = await renderAt('/connections');
-    await waitFor(() => expect(container.querySelector('canvas.conn-canvas')).toBeTruthy());
+    await waitFor(() => expect(container.querySelector('canvas.conn-canvas-full')).toBeTruthy());
     expect(container.textContent).toContain('Add card');
   });
   it('Simulator renders and models', async () => {

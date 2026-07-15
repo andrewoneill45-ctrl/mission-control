@@ -168,16 +168,51 @@ input.field:focus, textarea.field:focus { border-color: var(--accent); box-shado
 .suggestions button { background: var(--panel); border: 1px dashed #c1cddf; color: var(--ink2); border-radius: 999px; padding: 5px 13px; font-size: 12px; cursor: pointer; }
 .suggestions button:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ---------- connections ---------- */
-.conn-wrap { display: grid; grid-template-columns: 1fr 320px; gap: 16px; }
-@media (max-width: 1000px) { .conn-wrap { grid-template-columns: 1fr; } }
-.conn-canvas { background: #fbfcfe; border: 1px solid var(--line); border-radius: var(--radius); width: 100%; display: block; cursor: grab; box-shadow: var(--shadow); touch-action: none; }
-.conn-canvas.grabbing { cursor: grabbing; }
-.conn-legend { display: flex; gap: 12px; flex-wrap: wrap; margin: 10px 0; font-size: 11.5px; color: var(--ink2); }
+/* ---------- connections: full-page canvas ---------- */
+.conn-full { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; }
+.conn-stage-full { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.conn-canvas-full { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.conn-canvas-full.grabbing { cursor: grabbing !important; }
+.conn-panel {
+  position: absolute; display: flex; flex-direction: column; gap: 10px;
+  background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(8px);
+  border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+  box-shadow: 0 6px 26px rgba(23, 32, 47, 0.12); width: 268px; max-height: calc(100% - 28px); overflow-y: auto;
+}
+.conn-panel.left { top: 14px; left: 14px; }
+.conn-panel.closed { width: auto; }
+.conn-panel-head { display: flex; align-items: baseline; gap: 8px; cursor: pointer; user-select: none; font-size: 13.5px; }
+.conn-panel .sharedbar { margin: 0; padding: 8px 10px; }
+.conn-zoom {
+  position: absolute; bottom: 18px; right: 18px; display: flex; flex-direction: column; gap: 6px;
+  background: rgba(255, 255, 255, 0.94); border: 1px solid var(--line); border-radius: 12px; padding: 8px;
+  box-shadow: 0 6px 26px rgba(23, 32, 47, 0.12);
+}
+.conn-zoom .btn { width: 34px; }
+.conn-banner {
+  position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+  background: #0f9d8a; color: #fff; border-radius: 999px; padding: 7px 18px; font-size: 12.5px;
+  box-shadow: 0 6px 22px rgba(15, 157, 138, 0.4); white-space: nowrap;
+}
+.conn-banner a { color: #fff; }
+.conn-inspector {
+  position: absolute; top: 14px; right: 14px; bottom: 14px; width: 320px; max-width: calc(100vw - 28px);
+  display: flex; flex-direction: column;
+  background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(8px);
+  border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px;
+  box-shadow: 0 10px 34px rgba(23, 32, 47, 0.16);
+}
+.conn-modal {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  background: rgba(23, 32, 47, 0.28); backdrop-filter: blur(2px);
+}
+.conn-legend { display: flex; gap: 10px 12px; flex-wrap: wrap; margin: 10px 0; font-size: 11.5px; color: var(--ink2); }
 .conn-legend span { display: flex; align-items: center; gap: 5px; }
 .conn-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
-.conn-toolbar { display: flex; gap: 6px; position: absolute; top: 10px; right: 10px; }
-.conn-stage { position: relative; }
+@media (max-width: 760px) {
+  .conn-panel.left { left: 8px; top: 8px; width: 230px; }
+  .conn-inspector { top: auto; bottom: 8px; right: 8px; left: 8px; width: auto; max-height: 55%; }
+}
 
 /* ---------- simulator ---------- */
 .sim-lever { margin-bottom: 18px; }
