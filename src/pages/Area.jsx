@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useData } from '../data.jsx';
-import { Stat, Bars, LineChart, Legend, Columns } from '../components/ui.jsx';
+import { Stat, Bars, LineChart, Legend, Columns, PrintHeader, PrintButton } from '../components/ui.jsx';
 
 export default function Area() {
   const { id } = useParams();
@@ -14,9 +14,13 @@ export default function Area() {
 
   return (
     <div>
+      <PrintHeader title={`Area briefing — ${a.name}`} subtitle={ne ? 'Mission North East' : 'Mission Coastal'} />
       <div className="pagehead">
         <div className={`kicker ${ne ? '' : 'coastal'}`}>{ne ? 'Mission North East' : 'Mission Coastal'} · {a.laLevel !== a.name ? `within ${a.laLevel} LA` : 'local authority'}</div>
-        <h2>{a.name}</h2>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
+          <h2>{a.name}</h2>
+          <PrintButton label="Print briefing / PDF" />
+        </div>
         <p className="lede">{a.summary}</p>
       </div>
 

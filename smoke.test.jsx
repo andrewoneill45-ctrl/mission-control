@@ -18,8 +18,13 @@ const conn = JSON.parse(fs.readFileSync('./public/data/connections.json', 'utf8'
 
 beforeAll(() => {
   global.fetch = vi.fn((url) => {
-    const body = String(url).includes('connections') ? conn : md;
-    return Promise.resolve({ ok: true, json: () => Promise.resolve(body) });
+    const u = String(url);
+    const body = u.includes('/api/plans') ? null : u.includes('connections') ? conn : md;
+    return Promise.resolve({
+      ok: true,
+      headers: { get: () => 'application/json' },
+      json: () => Promise.resolve(body),
+    });
   });
 });
 
@@ -99,6 +104,14 @@ describe('Mission Control pages', () => {
     const { container } = await renderAt('/simulator');
     await waitFor(() => expect(container.textContent).toContain('Impact Simulator'));
     expect(container.textContent).toContain('Attainment 8 trajectory');
+    expect(container.textContent).toContain('Save scenario');
+    expect(container.textContent).toContain('Saved scenarios');
+  });
+  it('VMOST has team share + print controls', async () => {
+    const { container } = await renderAt('/vmost');
+    await waitFor(() => expect(container.textContent).toContain('Publish mine'));
+    expect(container.textContent).toContain('Expand all');
+    expect(container.textContent).toContain('Print / PDF');
   });
   it('Ask renders suggestions', async () => {
     const { container } = await renderAt('/ask');

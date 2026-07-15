@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useData } from '../data.jsx';
-import { Stat, Bars, LineChart, Legend } from '../components/ui.jsx';
+import { Stat, Bars, LineChart, Legend, PrintHeader, PrintButton } from '../components/ui.jsx';
 
 export default function Mission() {
   const { id } = useParams();
@@ -14,9 +14,13 @@ function MissionNE({ data }) {
   const su = data.areas['sunderland'], st = data.areas['south-tyneside'];
   return (
     <div>
+      <PrintHeader title="Mission briefing — Mission North East" />
       <div className="pagehead">
         <div className="kicker">Mission North East</div>
-        <h2>Mission North East</h2>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
+          <h2>Mission North East</h2>
+          <PrintButton label="Print briefing / PDF" />
+        </div>
         <p className="lede">
           The North East was selected as a region: the lowest Attainment 8 of any English region. Phase 1 starts with
           clusters in <b>Sunderland</b> and <b>South Tyneside</b> — both with sustained below-average KS4 attainment,
@@ -103,9 +107,13 @@ function MissionCoastal({ data }) {
   const sc = data.areas['scarborough'], ha = data.areas['hastings'];
   return (
     <div>
+      <PrintHeader title="Mission briefing — Mission Coastal" />
       <div className="pagehead">
         <div className="kicker coastal">Mission Coastal</div>
-        <h2>Mission Coastal</h2>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
+          <h2>Mission Coastal</h2>
+          <PrintButton label="Print briefing / PDF" />
+        </div>
         <p className="lede">
           Ministers chose <b>Scarborough</b> and <b>Hastings</b> as a north-south combination from a data-led
           shortlist of coastal LADs (three years of KS2 and A8 data, absence and IDACI 2025), in recognition that

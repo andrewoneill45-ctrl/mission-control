@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useData, askApi, loadVmost, saveVmost, uid, download } from '../data.jsx';
 import AiAnswer, { extractJson } from '../components/AiAnswer.jsx';
+import SharedBar from '../components/SharedBar.jsx';
+import { PrintHeader, PrintButton } from '../components/ui.jsx';
 
 export default function Vmost() {
   const { data } = useData();
@@ -46,6 +48,7 @@ export default function Vmost() {
     const t = sid ? o.strategies.find((x) => x.id === sid) : o;
     t.open = !t.open;
   });
+  const setAllOpen = (v) => update((c) => c.objectives.forEach((o) => { o.open = v; o.strategies.forEach((s) => { s.open = v; }); }));
 
   // ----- AI -----
   const suggestObjectives = async () => {
@@ -96,15 +99,19 @@ export default function Vmost() {
 
   return (
     <div>
+      <PrintHeader title="VMOST Plan" subtitle="Mission North East & Mission Coastal" />
       <div className="pagehead">
         <div className="kicker">Strategy · VMOST</div>
         <h2>VMOST Planner</h2>
         <p className="lede">
           Vision and Mission are fixed; build the plan beneath them. Add Objectives, nest Strategies under each, and
           Tactics under each Strategy. Ask Claude to suggest data-grounded objectives, generate strategy/tactic
-          trees, and simulate the intended impact. Plans save in this browser — export JSON to share.
+          trees, and simulate the intended impact. Your edits save in this browser; use the team bar below to
+          publish to (or load from) the shared version everyone sees.
         </p>
       </div>
+
+      <SharedBar blobKey="vmost" label="VMOST plan" getLocal={() => plan} applyRemote={(d) => setPlan(d)} />
 
       <div className="vm-vm"><b>VISION</b><p>{plan.vision}</p></div>
       <div className="vm-vm" style={{ borderColor: 'var(--blue)' }}><b style={{ color: 'var(--blue)' }}>MISSION</b><p>{plan.mission}</p></div>
@@ -118,6 +125,9 @@ export default function Vmost() {
           {impactLoading ? <><span className="spinner" /> Modelling…</> : '≋ Simulate intended impact'}
         </button>
         <span style={{ flex: 1 }} />
+        <button className="btn sm ghost" onClick={() => setAllOpen(true)}>Expand all</button>
+        <button className="btn sm ghost" onClick={() => setAllOpen(false)}>Collapse all</button>
+        <PrintButton />
         <button className="btn sm ghost" onClick={() => download('mission-vmost.json', plan)}>Export JSON</button>
         <button className="btn sm ghost" onClick={() => fileRef.current?.click()}>Import JSON</button>
         <button className="btn sm ghost danger" onClick={() => { if (confirm('Reset plan to the seed from the Missions Overview deck?')) setPlan(JSON.parse(JSON.stringify(data.vmostSeed))); }}>Reset to seed</button>

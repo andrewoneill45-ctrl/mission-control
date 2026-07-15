@@ -2,6 +2,7 @@
 // Pan (drag background), zoom (wheel / buttons), drag nodes, click to select.
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useData, loadConnEdits, saveConnEdits, uid, download } from '../data.jsx';
+import SharedBar from '../components/SharedBar.jsx';
 
 const KIND_COLORS = {
   vmost: '#0f9d8a', mission: '#2f6fdb', area: '#d97a06', strand: '#7c5cd6',
@@ -275,9 +276,11 @@ export default function Connections() {
         <p className="lede">
           A linked canvas of the themes, ideas, partners and delivery components across both missions — seeded from
           the Missions documents. Drag to pan, scroll to zoom, drag cards to arrange, click a card to read and edit
-          it. Edits save in this browser; export JSON to share.
+          it. Edits save in this browser; publish to the team store or export JSON to share.
         </p>
       </div>
+
+      <SharedBar blobKey="connections" label="connections map" getLocal={() => graph} applyRemote={(d) => { posRef.current = {}; setGraph(d); }} />
 
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}>
         <select className="field" style={{ width: 200 }} value={filter} onChange={(e) => { setFilter(e.target.value); setSelected(null); }}>

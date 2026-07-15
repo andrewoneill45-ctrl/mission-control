@@ -51,6 +51,47 @@ export function saveConnEdits(graph) {
   try { localStorage.setItem(CKEY, JSON.stringify(graph)); } catch { /* ignore */ }
 }
 
+// ---- Shared store (Netlify Blobs via /api/plans) ----
+export function getAuthor() {
+  let a = null;
+  try { a = localStorage.getItem('mission-control-author'); } catch { /* */ }
+  if (!a) {
+    a = (window.prompt('Your name or initials (shown against shared edits):') || 'anon').trim() || 'anon';
+    try { localStorage.setItem('mission-control-author', a); } catch { /* */ }
+  }
+  return a;
+}
+async function sharedFetch(url, opts) {
+  const r = await fetch(url, opts);
+  const ct = r.headers.get('content-type') || '';
+  if (!r.ok || !ct.includes('json')) throw new Error('Shared store unavailable — it needs the site to run on Netlify (or `netlify dev` locally).');
+  const j = await r.json();
+  if (j && j.error) throw new Error(j.error === 'blobs_unavailable' || j.error === 'blobs_error'
+    ? 'Netlify Blobs not available on this deploy — redeploy the site so the plans function is picked up.'
+    : j.detail || j.error);
+  return j;
+}
+export function sharedGet(key) {
+  return sharedFetch(`/api/plans?key=${encodeURIComponent(key)}`);
+}
+export function sharedPut(key, data) {
+  return sharedFetch(`/api/plans?key=${encodeURIComponent(key)}`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ data, author: getAuthor() }),
+  });
+}
+
+// ---- Simulator scenarios (localStorage) ----
+const SCKEY = 'mission-control-scenarios-v1';
+export function loadScenarios() {
+  try { const raw = localStorage.getItem(SCKEY); if (raw) return JSON.parse(raw); } catch { /* */ }
+  return [];
+}
+export function saveScenarios(list) {
+  try { localStorage.setItem(SCKEY, JSON.stringify(list)); } catch { /* */ }
+}
+
 export function uid() {
   return Math.random().toString(36).slice(2, 9);
 }

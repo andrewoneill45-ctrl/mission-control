@@ -1,6 +1,23 @@
 // Shared UI primitives: stat cards + plain-SVG charts (no chart libraries).
 import { useNavigate } from 'react-router-dom';
 
+// Print/PDF briefing kit: header appears only when printing; button triggers the browser print dialog.
+export function PrintHeader({ title, subtitle }) {
+  return (
+    <div className="print-header">
+      <span><b>Mission Control</b> · {title}{subtitle ? ` — ${subtitle}` : ''}</span>
+      <span className="mono">OFFICIAL · printed {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+    </div>
+  );
+}
+export function PrintButton({ label = 'Print / PDF' }) {
+  return (
+    <button className="btn sm ghost noprint" title="Opens the print dialog — choose 'Save as PDF' for a briefing document" onClick={() => window.print()}>
+      ⎙ {label}
+    </button>
+  );
+}
+
 export function Stat({ value, label, detail, color = 'teal' }) {
   return (
     <div className={`stat ${color}`}>

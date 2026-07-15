@@ -8,8 +8,20 @@ A strategy hub for Mission North East (Sunderland, South Tyneside) and Mission C
 - **Mission NE / Mission Coastal** — mission-level rationale and cluster comparisons, with sub-pages per area (performance trends, NEET & destinations, school tables, area-specific deep-dives: Scarborough KS2, Hastings churn).
 - **VMOST Planner** — Vision/Mission fixed; add collapsible Objectives → Strategies → Tactics. Claude can suggest objectives from the data, generate strategy/tactic trees per objective, and simulate the intended impact of the whole plan. Saved in your browser; export/import JSON to share.
 - **Connections** — Supernotes-style linked cards (themes, strands, TLG concepts, partners, areas) seeded from the Missions documents. Click to read/edit, link cards, add your own. Export/import JSON.
-- **Impact Simulator** — NEET-Intelligence-style levers with modelled trajectories to 2030 per area, plus an AI stress-test.
+- **Impact Simulator** — NEET-Intelligence-style levers with modelled trajectories to 2030 per area, plus an AI stress-test. Save named scenarios (e.g. "PST-heavy" vs "enrichment-heavy") and tick two or more to compare trajectories and 2030 outcomes side by side; the stress-test compares them when a comparison is active.
 - **Ask** — natural-language Q&A over the whole dataset (optionally including your VMOST plan and notes), answered as mini-infographics.
+
+## Shared team plans (Netlify Blobs)
+
+VMOST, Connections and the scenario set each have a **"Team" bar**: *Publish mine* pushes your local version to a shared store; *Load shared* pulls the team version into your browser. One shared copy per document, stamped with author + time (you're asked for your name/initials once).
+
+- Powered by Netlify Blobs via `netlify/functions/plans.mjs` — zero configuration on Netlify; it works as soon as the site deploys.
+- Locally it works under `netlify dev` (sandboxed local store); under plain `npm run dev` the team bar reports the store as unavailable — everything else still works.
+- Last write wins: publish overwrites the shared copy, so fetch before big edits.
+
+## Print / PDF briefing mode
+
+Area pages, mission pages, the VMOST planner and the Simulator have a **Print / PDF** button (or use ⌘P). Navigation, buttons and controls are stripped; a briefing header (title + date + OFFICIAL marking) is added; charts and cards paginate cleanly. Choose "Save as PDF" in the print dialog for a shareable briefing. On VMOST, click **Expand all** first if you want the full tree in the document.
 
 ## Run locally
 
