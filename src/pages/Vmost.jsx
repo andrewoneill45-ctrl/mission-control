@@ -107,7 +107,7 @@ export default function Vmost() {
       </div>
 
       <div className="vm-vm"><b>VISION</b><p>{plan.vision}</p></div>
-      <div className="vm-vm" style={{ borderColor: '#5b9cf5' }}><b style={{ color: '#5b9cf5' }}>MISSION</b><p>{plan.mission}</p></div>
+      <div className="vm-vm" style={{ borderColor: 'var(--blue)' }}><b style={{ color: 'var(--blue)' }}>MISSION</b><p>{plan.mission}</p></div>
 
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', margin: '18px 0' }}>
         <button className="btn primary" onClick={() => addObjective()}>+ Add Objective</button>
@@ -127,14 +127,14 @@ export default function Vmost() {
       {aiError && <div className="error-box" style={{ marginBottom: 14 }}>{aiError}</div>}
 
       {suggestions && (
-        <div className="card" style={{ marginBottom: 16, borderColor: '#46c6b455' }}>
+        <div className="card" style={{ marginBottom: 16, borderColor: '#0f9d8a55' }}>
           <h4>✦ Suggested objectives <span className="sub">(grounded in the mission dataset — click to add)</span></h4>
           {suggestions.map((s, i) => (
             <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', padding: '9px 0', borderTop: i ? '1px solid var(--line)' : 'none' }}>
               <div style={{ flex: 1 }}>
                 <b style={{ fontSize: 13 }}>{s.title}</b> {s.area && s.area !== 'all' && <span className="pill">{s.area}</span>}
                 <div className="sub" style={{ fontSize: 12.4 }}>{s.detail}</div>
-                {s.evidence && <div className="sub" style={{ fontSize: 11.4, color: '#66748f', marginTop: 3 }}>Evidence: {s.evidence}</div>}
+                {s.evidence && <div className="sub" style={{ fontSize: 11.4, color: 'var(--ink3)', marginTop: 3 }}>Evidence: {s.evidence}</div>}
               </div>
               <button className="btn sm" onClick={() => { addObjective(s); setSuggestions(suggestions.filter((_, j) => j !== i)); }}>+ Add</button>
             </div>
@@ -175,7 +175,7 @@ function Editable({ value, onChange, className, placeholder }) {
   const [v, setV] = useState(value);
   useEffect(() => setV(value), [value]);
   if (!editing) {
-    return <span className={className} onDoubleClick={(e) => { e.stopPropagation(); setEditing(true); }} title="Double-click to edit">{value || <i style={{ color: '#66748f' }}>{placeholder}</i>}</span>;
+    return <span className={className} onDoubleClick={(e) => { e.stopPropagation(); setEditing(true); }} title="Double-click to edit">{value || <i style={{ color: 'var(--ink3)' }}>{placeholder}</i>}</span>;
   }
   return (
     <input autoFocus className="field" style={{ padding: '4px 8px', fontSize: 13 }} value={v}

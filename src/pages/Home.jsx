@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <div className="hero">
-        <div className="kicker" style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, letterSpacing: 1.6, textTransform: 'uppercase', color: '#46c6b4', marginBottom: 8 }}>
+        <div className="kicker" style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, letterSpacing: 1.6, textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 8 }}>
           Mission North East · Mission Coastal
         </div>
         <h2>A place-based strategy for children, communities and opportunity</h2>
@@ -57,7 +57,7 @@ export default function Home() {
       <div className="grid g4">
         {data.strands.map((s) => (
           <div className="card" key={s.id}>
-            <div style={{ fontFamily: 'IBM Plex Mono', color: '#46c6b4', fontSize: 11, marginBottom: 6 }}>0{s.id}</div>
+            <div style={{ fontFamily: 'IBM Plex Mono', color: 'var(--accent)', fontSize: 11, marginBottom: 6 }}>0{s.id}</div>
             <h4>{s.name}</h4>
             <div className="sub">{s.text}</div>
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
             {data.budget.lines.slice(0, 6).map((l, i) => (
               <div key={i} style={{ display: 'flex', gap: 7, alignItems: 'center', margin: '4px 0' }}>
                 <i style={{ width: 9, height: 9, borderRadius: 3, background: `var(--${budgetCols[i] === 'teal' ? 'accent' : budgetCols[i]})`, display: 'inline-block' }} />
-                <span style={{ color: '#9fadc9' }}>{l.item}</span>
+                <span style={{ color: 'var(--ink3)' }}>{l.item}</span>
                 <b style={{ marginLeft: 'auto', fontFamily: 'IBM Plex Mono', fontSize: 11.5 }}>£{(l.amount / 1000).toFixed(0)}k</b>
               </div>
             ))}

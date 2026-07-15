@@ -90,9 +90,10 @@ describe('Mission Control pages', () => {
     expect(container.textContent).toContain('Narrow the gap');
     expect(container.textContent).toContain('Add Objective');
   });
-  it('Connections renders graph', async () => {
+  it('Connections renders canvas', async () => {
     const { container } = await renderAt('/connections');
-    await waitFor(() => expect(container.querySelectorAll('circle').length).toBeGreaterThan(20));
+    await waitFor(() => expect(container.querySelector('canvas.conn-canvas')).toBeTruthy());
+    expect(container.textContent).toContain('Add card');
   });
   it('Simulator renders and models', async () => {
     const { container } = await renderAt('/simulator');

@@ -39,11 +39,16 @@ function MissionNE({ data }) {
           Composite ranking across A8 (all pupils and disadvantaged, three years), absence and persistent absence.
           Higher score = weaker position. Sunderland and South Tyneside rank joint 2nd weakest; Middlesbrough (weakest) is already covered by other programmes.
         </div>
-        <Bars unit="" data={[...data.neLAs].sort((a, b) => b.composite - a.composite).map((l) => ({
-          label: l.la, value: l.composite,
-          color: ['Sunderland', 'South Tyneside'].includes(l.la) ? 'teal' : 'navy',
-          highlight: ['Sunderland', 'South Tyneside'].includes(l.la),
-        }))} />
+        <Bars unit="" data={[...data.neLAs].sort((a, b) => b.composite - a.composite).map((l) => {
+          const isMission = ['Sunderland', 'South Tyneside'].includes(l.la);
+          return {
+            label: l.la, value: l.composite,
+            color: isMission ? 'teal' : 'navy',
+            highlight: isMission,
+            to: isMission ? `/area/${l.la === 'Sunderland' ? 'sunderland' : 'south-tyneside'}` : undefined,
+            title: isMission ? `Open the ${l.la} page` : `${l.la}: composite score ${l.composite} · A8 ${l.a8} · disadvantaged A8 ${l.a8_disadv}`,
+          };
+        })} />
       </div>
 
       <h3 className="sect">The two clusters, side by side</h3>

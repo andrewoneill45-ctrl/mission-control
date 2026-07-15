@@ -68,7 +68,7 @@ export default function Ask() {
         </p>
       </div>
 
-      <label style={{ display: 'flex', gap: 8, alignItems: 'center', fontSize: 12.6, color: '#9fadc9', marginBottom: 10 }}>
+      <label style={{ display: 'flex', gap: 8, alignItems: 'center', fontSize: 12.6, color: 'var(--ink3)', marginBottom: 10 }}>
         <input type="checkbox" checked={includePlan} onChange={(e) => setIncludePlan(e.target.checked)} />
         Include my VMOST plan and connection notes as context
       </label>
@@ -85,7 +85,7 @@ export default function Ask() {
             {m.role === 'user' ? m.text : <AiAnswer text={m.text} />}
           </div>
         ))}
-        {busy && <div className="msg ai"><span className="spinner" /> <span style={{ color: '#9fadc9', fontSize: 13 }}>Interrogating the data…</span></div>}
+        {busy && <div className="msg ai"><span className="spinner" /> <span style={{ color: 'var(--ink3)', fontSize: 13 }}>Interrogating the data…</span></div>}
         <div ref={endRef} />
       </div>
 

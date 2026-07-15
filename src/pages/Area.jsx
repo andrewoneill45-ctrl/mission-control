@@ -73,13 +73,14 @@ export default function Area() {
           </div>
           <h4 style={{ marginTop: 14 }}>School-leaver destinations (KS4 2022/23, area secondaries)</h4>
           <DestBars schools={a.schools.secondary} />
+          <div className="note">Click a bar to jump to the school-level table.</div>
         </div>
       </div>
 
       {a.name === 'Scarborough' && <ScarbKS2 data={data} />}
       {a.name === 'Hastings' && <HastingsCohort data={data} />}
 
-      <h3 className="sect">Secondary schools ({a.schools.secondary.length})</h3>
+      <h3 className="sect" id="secondary-schools">Secondary schools ({a.schools.secondary.length})</h3>
       <SchoolTable schools={a.schools.secondary} kind="secondary" england={e} />
 
       <h3 className="sect">Primary schools ({a.schools.primary.length})</h3>
@@ -104,12 +105,13 @@ function DestBars({ schools }) {
     return acc;
   }, { cohort: 0, edu: 0, app: 0, work: 0, ns: 0 });
   const pct = (k) => (tot[k] / tot.cohort) * 100;
+  const jump = () => document.getElementById('secondary-schools')?.scrollIntoView({ behavior: 'smooth' });
   return (
     <Bars unit="%" max={100} data={[
-      { label: 'Sustained education', value: pct('edu'), color: 'green' },
-      { label: 'Apprenticeship', value: pct('app'), color: 'blue' },
-      { label: 'Employment', value: pct('work'), color: 'navy' },
-      { label: 'No sustained destination', value: pct('ns'), color: 'crimson', highlight: true },
+      { label: 'Sustained education', value: pct('edu'), color: 'green', onClick: jump },
+      { label: 'Apprenticeship', value: pct('app'), color: 'blue', onClick: jump },
+      { label: 'Employment', value: pct('work'), color: 'navy', onClick: jump },
+      { label: 'No sustained destination', value: pct('ns'), color: 'crimson', highlight: true, onClick: jump },
     ]} />
   );
 }
@@ -134,9 +136,10 @@ function SchoolTable({ schools, kind, england }) {
         </thead>
         <tbody>
           {rows.map((s) => (
-            <tr key={s.urn}>
-              <td>{s.name}</td>
-              <td style={{ color: '#9fadc9', fontSize: 11.5 }}>{s.trust || '—'}</td>
+            <tr key={s.urn} className="rowlink" title={`Open ${s.name} on Get Information About Schools`}
+              onClick={() => window.open(`https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/${s.urn}`, '_blank', 'noopener')}>
+              <td>{s.name} <span style={{ color: 'var(--ink3)', fontSize: 10 }}>↗</span></td>
+              <td style={{ color: 'var(--ink3)', fontSize: 11.5 }}>{s.trust || '—'}</td>
               <td className="num">{s.pupils ?? '—'}</td>
               <td className="num">{s.edu_fsm_pct ?? s.ks2_fsm_pct ?? '—'}</td>
               {sec ? (<>
@@ -150,7 +153,7 @@ function SchoolTable({ schools, kind, england }) {
                 <Num v={s.ks2_mat_exp != null ? Math.round(s.ks2_mat_exp) : null} benchmark={74} />
                 <Num v={s.ks2_writ_exp != null ? Math.round(s.ks2_writ_exp) : null} benchmark={72} />
               </>)}
-              <td style={{ fontSize: 11.5, color: '#9fadc9' }}>{s.ofsted || '—'}</td>
+              <td style={{ fontSize: 11.5, color: 'var(--ink3)' }}>{s.ofsted || '—'}</td>
             </tr>
           ))}
         </tbody>
@@ -165,7 +168,7 @@ function SchoolTable({ schools, kind, england }) {
 }
 
 function Num({ v, benchmark, invert }) {
-  if (v == null) return <td className="num" style={{ color: '#66748f' }}>—</td>;
+  if (v == null) return <td className="num" style={{ color: 'var(--ink3)' }}>—</td>;
   const good = invert ? v < benchmark : v >= benchmark;
   const cls = good ? 'good' : (invert ? v > benchmark * 1.6 : v < benchmark * 0.85) ? 'bad' : 'mid';
   return <td className={`num ${cls}`}>{v}</td>;

@@ -99,7 +99,7 @@ export default function Simulator() {
 
       <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
         {Object.entries(areas).map(([k, v]) => (
-          <button key={k} className="btn" style={areaKey === k ? { borderColor: v.mission === 'ne' ? '#46c6b4' : '#f0a544', color: '#fff' } : {}} onClick={() => setAreaKey(k)}>
+          <button key={k} className="btn" style={areaKey === k ? { borderColor: v.mission === 'ne' ? 'var(--accent)' : 'var(--coastal)', color: v.mission === 'ne' ? 'var(--accent)' : 'var(--coastal)', fontWeight: 700 } : {}} onClick={() => setAreaKey(k)}>
             {v.name}
           </button>
         ))}
