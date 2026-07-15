@@ -14,7 +14,12 @@ const KIND_LABELS = {
   partner: 'Partner', theme: 'Theme', concept: 'Concept', delivery: 'Delivery', note: 'Note',
 };
 const MAJOR = new Set(['vmost', 'mission', 'area', 'strand']);
-const W = 2400, H = 1700; // world size for the initial layout
+const W = 1700, H = 1200; // world size for the initial layout
+
+// Semantic zoom (the Supernotes trick): when zooming out, the map compresses
+// but cards shrink far more slowly, so they stay readable at any zoom.
+// Returns the card scale factor in world units for a given view zoom k.
+const cardScale = (k) => Math.min(2, Math.max(1, Math.pow(1 / k, 0.55)));
 
 // ---------- layout ----------
 function forceLayout(nodes, edges, iterations = 340) {
@@ -24,7 +29,7 @@ function forceLayout(nodes, edges, iterations = 340) {
     // seed clustered by kind so related cards start near each other
     const ka = (kinds.indexOf(n.kind) / Math.max(1, kinds.length)) * Math.PI * 2;
     const jx = ((i * 37) % 17) / 17 - 0.5, jy = ((i * 53) % 13) / 13 - 0.5;
-    pos[n.id] = { x: W / 2 + Math.cos(ka) * W / 4 + jx * 560, y: H / 2 + Math.sin(ka) * H / 4 + jy * 420 };
+    pos[n.id] = { x: W / 2 + Math.cos(ka) * W / 4.5 + jx * 380, y: H / 2 + Math.sin(ka) * H / 4.5 + jy * 300 };
   });
   const deg = {};
   edges.forEach((e) => { deg[e.from] = (deg[e.from] || 0) + 1; deg[e.to] = (deg[e.to] || 0) + 1; });
@@ -35,7 +40,7 @@ function forceLayout(nodes, edges, iterations = 340) {
         const a = pos[nodes[i].id], b = pos[nodes[j].id];
         let dx = a.x - b.x, dy = a.y - b.y;
         const d2 = dx * dx + dy * dy || 1;
-        const f = (68000 / d2) * t;
+        const f = (30000 / d2) * t;
         dx *= f; dy *= f;
         a.x += dx; a.y += dy; b.x -= dx; b.y -= dy;
       }
@@ -45,7 +50,7 @@ function forceLayout(nodes, edges, iterations = 340) {
       if (!a || !b) return;
       const dx = b.x - a.x, dy = b.y - a.y;
       const d = Math.sqrt(dx * dx + dy * dy) || 1;
-      const f = ((d - 300) / d) * 0.055 * t;
+      const f = ((d - 235) / d) * 0.055 * t;
       a.x += dx * f; a.y += dy * f; b.x -= dx * f; b.y -= dy * f;
     });
     nodes.forEach((n) => {
@@ -60,7 +65,7 @@ function forceLayout(nodes, edges, iterations = 340) {
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const a = pos[nodes[i].id], b = pos[nodes[j].id];
-        const minX = 205, minY = 84;
+        const minX = 218, minY = 92;
         const dx = b.x - a.x, dy = b.y - a.y;
         if (Math.abs(dx) < minX && Math.abs(dy) < minY) {
           moved = true;
@@ -158,10 +163,16 @@ export default function Connections() {
     const pts = visible.map((n) => posRef.current[n.id]).filter(Boolean);
     if (!pts.length) return { x: 0, y: 0, k: 1 };
     const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
-    const minX = Math.min(...xs) - 160, maxX = Math.max(...xs) + 160;
-    const minY = Math.min(...ys) - 110, maxY = Math.max(...ys) + 110;
-    const k = Math.max(0.22, Math.min(1.4, Math.min(cw / (maxX - minX), ch / (maxY - minY))));
-    return { k, x: (cw - (minX + maxX) * k) / 2, y: (ch - (minY + maxY) * k) / 2 };
+    // two passes: card footprints grow when zoomed out (semantic zoom), so
+    // estimate k first, then refit with the margin cards will actually need.
+    const solve = (margin) => {
+      const minX = Math.min(...xs) - margin, maxX = Math.max(...xs) + margin;
+      const minY = Math.min(...ys) - margin * 0.62, maxY = Math.max(...ys) + margin * 0.62;
+      const k = Math.max(0.12, Math.min(1.2, Math.min(cw / (maxX - minX), ch / (maxY - minY))));
+      return { k, x: (cw - (minX + maxX) * k) / 2, y: (ch - (minY + maxY) * k) / 2 };
+    };
+    const first = solve(140);
+    return solve(130 * cardScale(first.k));
   };
 
   // ---------- drawing ----------
@@ -192,7 +203,8 @@ export default function Connections() {
     ctx.save();
     ctx.translate(v.x, v.y);
     ctx.scale(v.k, v.k);
-    const step = 34;
+    let step = 34;
+    while (step * v.k < 24) step *= 2; // keep the dot grid airy at any zoom
     const x0 = Math.floor((-v.x / v.k) / step) * step, x1 = (-v.x + cw) / v.k;
     const y0 = Math.floor((-v.y / v.k) / step) * step, y1 = (-v.y + ch) / v.k;
     ctx.fillStyle = '#17202f18';
@@ -218,21 +230,23 @@ export default function Connections() {
       ctx.stroke();
     });
 
-    // cards
+    // cards — semantic zoom: sizes scale by `s` so cards stay readable zoomed out
+    const s = cardScale(v.k);
     ctx.textBaseline = 'middle';
     visible.forEach((n) => {
       const p = pos[n.id];
       if (!p) return;
       const major = MAJOR.has(n.kind);
       const col = KIND_COLORS[n.kind] || '#51648c';
-      const fs = major ? 13.5 : 12.5;
+      const fs = (major ? 13.5 : 12.5) * s;
       ctx.font = `${major ? 700 : 600} ${fs}px Inter, sans-serif`;
-      const maxTextW = major ? 190 : 160;
+      const maxTextW = (major ? 190 : 160) * s;
       const lines = wrapLines(ctx, n.label, maxTextW, 2);
-      const textW = Math.max(...lines.map((l) => ctx.measureText(l).width), 56);
-      const pw = textW + 34, lh = fs + 4;
-      const ph = 12 + lines.length * lh + 14;
+      const textW = Math.max(...lines.map((l) => ctx.measureText(l).width), 56 * s);
+      const pw = textW + 34 * s, lh = fs + 4 * s;
+      const ph = 12 * s + lines.length * lh + 14 * s;
       const x = p.x - pw / 2, y = p.y - ph / 2;
+      const r = 9 * s;
       const isSel = n.id === selected;
       const dim = selected && !isSel && !neighbourIds.has(n.id);
 
@@ -242,28 +256,28 @@ export default function Connections() {
       ctx.shadowColor = 'rgba(23,32,47,0.13)';
       ctx.shadowBlur = 10 / v.k;
       ctx.shadowOffsetY = 2 / v.k;
-      ctx.beginPath(); ctx.roundRect(x, y, pw, ph, 9);
+      ctx.beginPath(); ctx.roundRect(x, y, pw, ph, r);
       ctx.fillStyle = major ? col : '#ffffff';
       ctx.fill();
       ctx.restore();
-      ctx.beginPath(); ctx.roundRect(x, y, pw, ph, 9);
+      ctx.beginPath(); ctx.roundRect(x, y, pw, ph, r);
       ctx.strokeStyle = isSel ? col : major ? 'rgba(255,255,255,0.25)' : '#dbe3ef';
       ctx.lineWidth = (isSel ? 2.6 : 1.2) / Math.sqrt(v.k);
       ctx.stroke();
       if (!major) { // kind accent strip, clipped to the card's rounded corners
-        ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, pw, ph, 9); ctx.clip();
-        ctx.fillStyle = col; ctx.fillRect(x, y, 4.5, ph);
+        ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, pw, ph, r); ctx.clip();
+        ctx.fillStyle = col; ctx.fillRect(x, y, 4.5 * s, ph);
         ctx.restore();
       }
       // title
       ctx.font = `${major ? 700 : 600} ${fs}px Inter, sans-serif`;
       ctx.fillStyle = major ? '#ffffff' : '#1e293b';
       ctx.textAlign = 'left';
-      lines.forEach((l, i) => ctx.fillText(l, x + 15, y + 12 + lh * i + lh / 2 - 1));
+      lines.forEach((l, i) => ctx.fillText(l, x + 15 * s, y + 12 * s + lh * i + lh / 2 - 1));
       // kind caption
-      ctx.font = `600 8.5px Inter, sans-serif`;
+      ctx.font = `600 ${8.5 * s}px Inter, sans-serif`;
       ctx.fillStyle = major ? 'rgba(255,255,255,0.75)' : col;
-      ctx.fillText((KIND_LABELS[n.kind] || n.kind).toUpperCase(), x + 15, y + ph - 9);
+      ctx.fillText((KIND_LABELS[n.kind] || n.kind).toUpperCase(), x + 15 * s, y + ph - 9 * s);
       ctx.globalAlpha = 1;
       n._hit = { x, y, w: pw, h: ph };
     });
