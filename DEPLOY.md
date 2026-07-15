@@ -10,6 +10,11 @@ A strategy hub for Mission North East (Sunderland, South Tyneside) and Mission C
 - **Connections** — Supernotes-style linked cards (themes, strands, TLG concepts, partners, areas) seeded from the Missions documents. Click to read/edit, link cards, add your own. Export/import JSON.
 - **Impact Simulator** — NEET-Intelligence-style levers with modelled trajectories to 2030 per area, plus an AI stress-test. Save named scenarios (e.g. "PST-heavy" vs "enrichment-heavy") and tick two or more to compare trajectories and 2030 outcomes side by side; the stress-test compares them when a comparison is active.
 - **Ask** — natural-language Q&A over the whole dataset (optionally including your VMOST plan and notes), answered as mini-infographics.
+- **Metrics** — the full measurement framework: Strand 2 outcome/collective-impact/sustainability KPIs with Year 1/Year 3 targets plus the 33-metric Mission Metrics framework, each line with an editable RAG status and note (share the scorecard via the team bar).
+
+## Evidence layer (July 2026 refresh)
+
+The dataset now also carries: per-school Ofsted sub-judgements and engagement drivers (persistent absence, absence, suspensions, permanent exclusions); the Ready to Work costed policy levers with modelled NEET impact; the NEET risk-factor evidence pack and White Working Class Inquiry findings; the eight School Enrichment Benchmarks; and digests of the White Paper and National Inclusion Framework. This powers the "What's driving it" school charts on area pages, the costed policy levers in the Simulator (with £/yr and modelled NEET reduction), the Evidence Library on the VMOST page, and a much richer AI brief (the Ask/suggest/stress-test functions can cite evidence, KPIs and named schools). Regenerate with `scripts/build_data.py` → `scripts/build_brief.py` → `scripts/build_enrich.py`.
 
 ## Shared team plans (Netlify Blobs)
 

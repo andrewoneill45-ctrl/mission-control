@@ -81,6 +81,8 @@ export default function Area() {
         </div>
       </div>
 
+      <DriversSection area={a} england={e} />
+
       {a.name === 'Scarborough' && <ScarbKS2 data={data} />}
       {a.name === 'Hastings' && <HastingsCohort data={data} />}
 
@@ -120,6 +122,53 @@ function DestBars({ schools }) {
   );
 }
 
+function DriversSection({ area, england }) {
+  const withD = area.schools.secondary.filter((s) => s.drivers && s.drivers.pa != null);
+  if (!withD.length) return null;
+  const gias = (s) => window.open(`https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/${s.urn}`, '_blank', 'noopener');
+  const ranked = [...withD].sort((x, y) => (y.drivers.pa || 0) - (x.drivers.pa || 0));
+  return (
+    <>
+      <h3 className="sect">What's driving it — school-level engagement drivers (2024/25)</h3>
+      <div className="grid g2">
+        <div className="card">
+          <h4>Persistent absence by secondary school <span className="sub" style={{ fontWeight: 400 }}>England secondary: {england.pa_secondary}%</span></h4>
+          <Bars unit="%" data={ranked.map((s) => ({
+            label: s.name, value: s.drivers.pa,
+            color: s.drivers.pa >= england.pa_secondary * 1.3 ? 'crimson' : s.drivers.pa >= england.pa_secondary ? 'amber' : 'green',
+            onClick: () => gias(s),
+            title: `${s.name}: PA ${s.drivers.pa}% · absence ${s.drivers.abs ?? '—'}% · suspensions ${s.drivers.susp ?? '—'}/100 — open on GIAS`,
+          }))} />
+          <div className="note">Red = 30%+ above the England rate. Click a school to open it on GIAS.</div>
+        </div>
+        <div className="card">
+          <h4>Suspension rate by secondary school <span className="sub" style={{ fontWeight: 400 }}>per 100 pupils · England ~11.9</span></h4>
+          <Bars unit="" data={[...withD].sort((x, y) => (y.drivers.susp || 0) - (x.drivers.susp || 0)).map((s) => ({
+            label: s.name, value: s.drivers.susp,
+            color: (s.drivers.susp || 0) >= 24 ? 'crimson' : (s.drivers.susp || 0) >= 12 ? 'amber' : 'green',
+            onClick: () => gias(s),
+            title: `${s.name}: suspensions ${s.drivers.susp}/100 · permanent ${s.drivers.perm}/100 — open on GIAS`,
+          }))} />
+          <div className="note">Attendance and behaviour are the PSTs' first-term focus: these charts show where to start.</div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+const OFSTED_GRADE = { 1: 'Outstanding', 2: 'Good', 3: 'Requires improvement', 4: 'Inadequate' };
+
+function OfstedCell({ s }) {
+  const oe = s.ofsted_sub?.oe;
+  const label = oe ? OFSTED_GRADE[oe] : (s.ofsted && s.ofsted !== 'Not inspected' ? s.ofsted : '—');
+  const cls = /Outstanding/.test(label) ? 'good' : /Good/.test(label) ? 'good' : /Requires/.test(label) ? 'mid' : /Inadequate|Serious/.test(label) ? 'bad' : '';
+  return (
+    <td style={{ fontSize: 11.5 }} className={cls} title={s.ofsted_date ? `Last inspection ${s.ofsted_date}` : undefined}>
+      {label}
+    </td>
+  );
+}
+
 function SchoolTable({ schools, kind, england }) {
   const [showAll, setShowAll] = useState(false);
   const rows = showAll ? schools : schools.slice(0, 12);
@@ -131,9 +180,9 @@ function SchoolTable({ schools, kind, england }) {
           <tr>
             <th>School</th><th>Trust</th><th className="num">Pupils</th><th className="num">FSM %</th>
             {sec ? (<>
-              <th className="num">A8</th><th className="num">A8 disadv</th><th className="num">Basics 4+</th><th className="num">No sust. dest %</th>
+              <th className="num">A8</th><th className="num">A8 disadv</th><th className="num">Basics 4+</th><th className="num">No sust. dest %</th><th className="num">PA %</th><th className="num">Susp /100</th>
             </>) : (<>
-              <th className="num">KS2 RWM %</th><th className="num">Reading %</th><th className="num">Maths %</th><th className="num">Writing %</th>
+              <th className="num">KS2 RWM %</th><th className="num">Reading %</th><th className="num">Maths %</th><th className="num">Writing %</th><th className="num">PA %</th>
             </>)}
             <th>Ofsted</th>
           </tr>
@@ -151,13 +200,16 @@ function SchoolTable({ schools, kind, england }) {
                 <Num v={s.a8_disadv} benchmark={england.a8_disadv} />
                 <Num v={s.basics_94} benchmark={63.1} />
                 <Num v={s.dest?.ns} benchmark={5} invert />
+                <Num v={s.drivers?.pa} benchmark={england.pa_secondary} invert />
+                <Num v={s.drivers?.susp} benchmark={11.9} invert />
               </>) : (<>
                 <Num v={s.ks2_rwm_exp != null ? Math.round(s.ks2_rwm_exp) : null} benchmark={61} />
                 <Num v={s.ks2_read_exp != null ? Math.round(s.ks2_read_exp) : null} benchmark={75} />
                 <Num v={s.ks2_mat_exp != null ? Math.round(s.ks2_mat_exp) : null} benchmark={74} />
                 <Num v={s.ks2_writ_exp != null ? Math.round(s.ks2_writ_exp) : null} benchmark={72} />
+                <Num v={s.drivers?.pa} benchmark={14.5} invert />
               </>)}
-              <td style={{ fontSize: 11.5, color: 'var(--ink3)' }}>{s.ofsted || '—'}</td>
+              <OfstedCell s={s} />
             </tr>
           ))}
         </tbody>

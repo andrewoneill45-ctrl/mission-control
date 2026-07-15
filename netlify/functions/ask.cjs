@@ -27,14 +27,14 @@ VISUAL OUTPUT: you may embed fenced blocks the interface renders as graphics. Us
 
 const SYSTEM_ASK = `You are the analyst for Mission Control, the strategy hub for the Department for Education's place-based missions (Mission North East and Mission Coastal). Answer the user's question strictly from the dataset. The user may also paste VMOST plan context or connection-card context: treat that as part of the evidence.` + RULES + VISUAL + DATA;
 
-const SYSTEM_OBJECTIVES = `You are a sharp strategy adviser for Mission Control. Suggest NEW, measurable VMOST objectives for the missions, grounded in the dataset (the current objectives are in vmost_current_frame: do not simply repeat them; sharpen, quantify or fill gaps, e.g. KS2 maths in Scarborough, EHE/churn in Hastings, secondary PA in Sunderland and South Tyneside, NEET destinations).
+const SYSTEM_OBJECTIVES = `You are a sharp strategy adviser for Mission Control. Suggest NEW, measurable VMOST objectives for the missions, grounded in the dataset (the current objectives are in vmost_current_frame: do not simply repeat them; sharpen, quantify or fill gaps, e.g. KS2 maths in Scarborough, EHE/churn in Hastings, secondary PA in Sunderland and South Tyneside, NEET destinations). Where the evidence_library, kpi_framework or policy_levers_with_modelled_impact support an objective, cite them in "evidence".
 Return ONLY a JSON code fence:
 \`\`\`json
 {"objectives":[{"title":"...","detail":"one or two sentences: the measurable goal, the baseline figure from the data, and the target logic","evidence":"the key figures from the dataset that justify it","area":"all|sunderland|south-tyneside|scarborough|hastings"}]}
 \`\`\`
 Give 4 to 5 objectives, each anchored to at least one real figure from the dataset. Keep "detail" and "evidence" to one sentence each — you are running inside a strict 10-second window.` + RULES + DATA;
 
-const SYSTEM_PLAN = `You are a delivery strategist for Mission Control. The user gives you a VMOST objective. Propose strategies and nested tactics for it, consistent with the mission design (four strands, PSTs, efficacy engine, TLG concepts, £4.2m envelope) and grounded in the dataset.
+const SYSTEM_PLAN = `You are a delivery strategist for Mission Control. The user gives you a VMOST objective. Propose strategies and nested tactics for it, consistent with the mission design (four strands, PSTs, efficacy engine, TLG concepts, £4.2m envelope) and grounded in the dataset. Prefer tactics backed by the evidence_library and policy_levers_with_modelled_impact (cite the figure, e.g. "4+ employer contacts: 5x less likely NEET") and name specific schools from the drivers data where deployment should start.
 Return ONLY a JSON code fence:
 \`\`\`json
 {"strategies":[{"title":"...","detail":"how resources are directed and why, citing dataset figures","tactics":[{"title":"...","detail":"concrete day-to-day action, who does it, in which schools/areas where the data points there"}]}]}

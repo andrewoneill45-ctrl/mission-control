@@ -8,6 +8,7 @@ import Area from './pages/Area.jsx';
 import Vmost from './pages/Vmost.jsx';
 import Connections from './pages/Connections.jsx';
 import Simulator from './pages/Simulator.jsx';
+import Metrics from './pages/Metrics.jsx';
 import Ask from './pages/Ask.jsx';
 import './styles.css';
 
@@ -70,6 +71,7 @@ function Nav() {
         <NavLink to="/vmost" className={link}>VMOST</NavLink>
         <NavLink to="/connections" className={link}>Connections</NavLink>
         <NavLink to="/simulator" className={link}>Simulator</NavLink>
+        <NavLink to="/metrics" className={link}>Metrics</NavLink>
         <NavLink to="/ask" className={link}>Ask&nbsp;✦</NavLink>
       </div>
     </header>
@@ -92,6 +94,7 @@ function Shell() {
             <Route path="/vmost" element={<Vmost />} />
             <Route path="/connections" element={<Connections />} />
             <Route path="/simulator" element={<Simulator />} />
+            <Route path="/metrics" element={<Metrics />} />
             <Route path="/ask" element={<Ask />} />
           </Routes>
         )}

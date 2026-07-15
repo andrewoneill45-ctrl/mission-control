@@ -30,7 +30,7 @@ const RAMP = [0, 0.35, 0.7, 0.9, 1.0]; // phased clusters; outcomes lag delivery
 const cumRamp = (i) => RAMP.slice(0, i + 1).reduce((x, y) => x + y, 0);
 const SCEN_COLORS = ['teal', 'crimson', 'blue', 'purple', 'amber', 'green'];
 
-export function computeModel(levers, a) {
+export function computeModel(levers, a, policy = {}, policyLevers = []) {
   const eff = { a8: 0, a8_disadv: 0, pa: 0, neet: 0, ks2: 0 };
   LEVERS.forEach((l) => {
     const v = levers[l.id] ?? 0;
@@ -40,17 +40,23 @@ export function computeModel(levers, a) {
       eff[k] += per * v;
     });
   });
+  // Costed policy levers (Ready to Work modelling): relative reduction on NEET
+  const polFrac = Math.min(0.45, policyLevers.reduce((acc, l) => acc + (l.modelled_max_reduction_pct / 100) * ((policy[l.id] || 0) / 100), 0));
+  const polCost = policyLevers.reduce((acc, l) => acc + l.indicative_cost_m_yr * ((policy[l.id] || 0) / 100), 0);
   const base = {
     a8: a.a8['2024/25'], a8_disadv: a.a8_disadv['2024/25'],
     pa: a.pa ? a.pa.secondary : 27.0, ks2: a.ks2_rwm['2024/25'],
     neet: a.neet.neetnk,
   };
   const capped = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
-  const track = (key, lo, hi) => YEARS.map((y, i) => ({
-    x: y, y: Math.round(capped(base[key] + eff[key] * cumRamp(i), lo, hi) * 10) / 10,
-  }));
+  const full = cumRamp(YEARS.length - 1);
+  const track = (key, lo, hi) => YEARS.map((y, i) => {
+    let v = base[key] + eff[key] * cumRamp(i);
+    if (key === 'neet') v *= (1 - polFrac * (cumRamp(i) / full));
+    return { x: y, y: Math.round(capped(v, lo, hi) * 10) / 10 };
+  });
   return {
-    base,
+    base, polFrac, polCost,
     a8: track('a8', 20, 60), a8_disadv: track('a8_disadv', 15, 50),
     pa: track('pa', 5, 45), neet: track('neet', 1, 25), ks2: track('ks2', 20, 90),
   };
@@ -69,16 +75,18 @@ export default function Simulator() {
   const [scenarios, setScenarios] = useState(() => loadScenarios());
   const [compare, setCompare] = useState([]); // scenario ids
   const [scenName, setScenName] = useState('');
+  const policyLevers = data.levers || [];
+  const [policy, setPolicy] = useState(() => Object.fromEntries(policyLevers.map((l) => [l.id, 0])));
 
   useEffect(() => { saveScenarios(scenarios); }, [scenarios]);
 
   const a = areas[areaKey];
   const e = data.meta.england;
-  const model = useMemo(() => computeModel(levers, a), [levers, a]);
+  const model = useMemo(() => computeModel(levers, a, policy, policyLevers), [levers, a, policy, policyLevers]);
 
   const saveScenario = () => {
     const name = scenName.trim() || `Scenario ${scenarios.length + 1}`;
-    setScenarios((s) => [...s, { id: uid(), name, areaKey, levers: { ...levers } }]);
+    setScenarios((s) => [...s, { id: uid(), name, areaKey, levers: { ...levers }, policy: { ...policy } }]);
     setScenName('');
   };
   const removeScenario = (id) => {
@@ -86,18 +94,21 @@ export default function Simulator() {
     setCompare((c) => c.filter((x) => x !== id));
   };
   const toggleCompare = (id) => setCompare((c) => c.includes(id) ? c.filter((x) => x !== id) : [...c, id].slice(-4));
-  const loadIntoLevers = (sc) => { setAreaKey(sc.areaKey); setLevers({ ...sc.levers }); };
+  const loadIntoLevers = (sc) => { setAreaKey(sc.areaKey); setLevers({ ...sc.levers }); if (sc.policy) setPolicy({ ...Object.fromEntries(policyLevers.map((l) => [l.id, 0])), ...sc.policy }); };
 
   const compared = compare
     .map((id) => scenarios.find((s) => s.id === id))
     .filter((sc) => sc && areas[sc.areaKey])
-    .map((sc, i) => ({ ...sc, color: SCEN_COLORS[i % SCEN_COLORS.length], model: computeModel(sc.levers, areas[sc.areaKey]) }));
+    .map((sc, i) => ({ ...sc, color: SCEN_COLORS[i % SCEN_COLORS.length], model: computeModel(sc.levers, areas[sc.areaKey], sc.policy || {}, policyLevers) }));
 
   const narrate = async () => {
     setLoading(true); setErr(null); setNarrative(null);
     try {
+      const activePol = policyLevers.filter((l) => (policy[l.id] || 0) > 0);
       let ctx = `SIMULATOR SETTINGS for ${a.name}:\n` +
         LEVERS.map((l) => `${l.name}: ${levers[l.id]} ${l.unit}`).join('\n') +
+        (activePol.length ? `\nCOSTED POLICY LEVERS (rollout %): ` + activePol.map((l) => `${l.name} ${policy[l.id]}%`).join('; ') +
+          `\nCombined modelled NEET reduction ${(model.polFrac * 100).toFixed(1)}%, indicative national cost £${model.polCost.toFixed(0)}m/yr.` : '') +
         `\nMODELLED 2030 OUTCOMES (illustrative): A8 ${endOf(model, 'a8')} (baseline ${model.base.a8}), disadvantaged A8 ${endOf(model, 'a8_disadv')} (baseline ${model.base.a8_disadv}), secondary PA ${endOf(model, 'pa')}% (baseline ${model.base.pa}%), KS2 RWM ${endOf(model, 'ks2')}% (baseline ${model.base.ks2}%), 16-17 NEET/not known ${endOf(model, 'neet')}% (baseline ${model.base.neet}%).`;
       if (compared.length) {
         ctx += '\n\nCOMPARISON SCENARIOS:\n' + compared.map((sc) =>
@@ -150,6 +161,21 @@ export default function Simulator() {
               <div className="note">{l.note}</div>
             </div>
           ))}
+          <h4 style={{ marginTop: 18 }}>Costed policy levers <span className="sub" style={{ fontWeight: 400 }}>(Ready to Work modelling — set rollout %)</span></h4>
+          {policyLevers.map((l) => (
+            <div className="sim-lever" key={l.id} style={{ marginBottom: 12 }}>
+              <label style={{ fontSize: 12.2 }}>{l.name}
+                <span className="val">{policy[l.id] || 0}% · £{Math.round(l.indicative_cost_m_yr * ((policy[l.id] || 0) / 100))}m/yr</span>
+              </label>
+              <input type="range" min={0} max={100} step={10} value={policy[l.id] || 0}
+                onChange={(ev) => setPolicy({ ...policy, [l.id]: Number(ev.target.value) })} />
+              <div className="note" style={{ marginTop: 2 }}>Max −{l.modelled_max_reduction_pct}% NEET · {l.evidence}</div>
+            </div>
+          ))}
+          <div className="grid g2" style={{ gap: 8, margin: '10px 0' }}>
+            <Stat value={`−${(model.polFrac * 100).toFixed(1)}%`} label="Combined modelled NEET reduction" detail="At full ramp (2030)" color={model.polFrac > 0 ? 'green' : 'navy'} />
+            <Stat value={`£${model.polCost.toFixed(0)}m`} label="Indicative national cost / yr" detail="Mission pilots cost a fraction of this" color="blue" />
+          </div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 6 }} className="noprint">
             <input className="field" style={{ flex: 1, minWidth: 150 }} placeholder="Name this scenario (e.g. PST-heavy)…"
               value={scenName} onChange={(ev) => setScenName(ev.target.value)}

@@ -11,6 +11,7 @@ import Area from './src/pages/Area.jsx';
 import Vmost from './src/pages/Vmost.jsx';
 import Connections from './src/pages/Connections.jsx';
 import Simulator from './src/pages/Simulator.jsx';
+import Metrics from './src/pages/Metrics.jsx';
 import Ask from './src/pages/Ask.jsx';
 
 const md = JSON.parse(fs.readFileSync('./public/data/mission_data.json', 'utf8'));
@@ -49,6 +50,7 @@ async function renderAt(path) {
             <Route path="/vmost" element={<Vmost />} />
             <Route path="/connections" element={<Connections />} />
             <Route path="/simulator" element={<Simulator />} />
+            <Route path="/metrics" element={<Metrics />} />
             <Route path="/ask" element={<Ask />} />
           </Routes>
           </Gate>
@@ -112,6 +114,22 @@ describe('Mission Control pages', () => {
     await waitFor(() => expect(container.textContent).toContain('Publish mine'));
     expect(container.textContent).toContain('Expand all');
     expect(container.textContent).toContain('Print / PDF');
+  });
+  it('Metrics tracker renders KPIs', async () => {
+    const { container } = await renderAt('/metrics');
+    await waitFor(() => expect(container.textContent).toContain('Metrics & KPI Tracker'));
+    expect(container.textContent).toContain('Outcome KPIs');
+    expect(container.textContent).toContain('Persistent absence rate');
+  });
+  it('Simulator shows costed policy levers', async () => {
+    const { container } = await renderAt('/simulator');
+    await waitFor(() => expect(container.textContent).toContain('Costed policy levers'));
+    expect(container.textContent).toContain('Combined modelled NEET reduction');
+  });
+  it('Area page shows drivers section', async () => {
+    const { container } = await renderAt('/area/sunderland');
+    await waitFor(() => expect(container.textContent).toContain("What's driving it"));
+    expect(container.textContent).toContain('Persistent absence by secondary school');
   });
   it('Ask renders suggestions', async () => {
     const { container } = await renderAt('/ask');

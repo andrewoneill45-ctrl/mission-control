@@ -325,6 +325,19 @@
        "ns": 11.0,
        "unk": 6.0,
        "cohort": 92.0
+      },
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2025-01-28",
+      "drivers": {
+       "pa": 28.8,
+       "abs": 10.0,
+       "susp": 49.8,
+       "perm": 0.4
       }
      },
      {
@@ -350,6 +363,17 @@
        "ns": 5.0,
        "unk": 3.0,
        "cohort": 117.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2018-02-06",
+      "drivers": {
+       "pa": 18.6,
+       "abs": 6.1,
+       "susp": 3.0,
+       "perm": 0.1
       }
      },
      {
@@ -375,6 +399,20 @@
        "ns": 4.0,
        "unk": 1.0,
        "cohort": 212.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-03-12",
+      "drivers": {
+       "pa": 21.6,
+       "abs": 6.8,
+       "susp": 2.7,
+       "perm": 0.0
       }
      },
      {
@@ -400,6 +438,17 @@
        "ns": 6.0,
        "unk": 3.0,
        "cohort": 214.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2018-01-26",
+      "drivers": {
+       "pa": 23.0,
+       "abs": 8.2,
+       "susp": 1.2,
+       "perm": 0.1
       }
      },
      {
@@ -425,6 +474,12 @@
        "ns": 7.0,
        "unk": 1.0,
        "cohort": 203.0
+      },
+      "drivers": {
+       "pa": 21.2,
+       "abs": 7.8,
+       "susp": 7.9,
+       "perm": 0.1
       }
      },
      {
@@ -450,6 +505,20 @@
        "ns": 10.0,
        "unk": 3.0,
        "cohort": 169.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-12-18",
+      "drivers": {
+       "pa": 29.2,
+       "abs": 10.2,
+       "susp": 11.2,
+       "perm": 0.0
       }
      },
      {
@@ -475,6 +544,20 @@
        "ns": 19.0,
        "unk": 5.0,
        "cohort": 48.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2020-02-02",
+      "drivers": {
+       "pa": 29.2,
+       "abs": 10.3,
+       "susp": 47.4,
+       "perm": 0.0
       }
      },
      {
@@ -492,7 +575,13 @@
       "a8_nondisadv": 50.3,
       "basics_94": 70.0,
       "basics_95": 50.0,
-      "sen_all_pct": 22.8
+      "sen_all_pct": 22.8,
+      "drivers": {
+       "pa": 33.4,
+       "abs": 11.6,
+       "susp": 55.0,
+       "perm": 0.4
+      }
      },
      {
       "urn": "139184",
@@ -517,6 +606,17 @@
        "ns": 6.0,
        "unk": 3.0,
        "cohort": 160.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2016-06-21",
+      "drivers": {
+       "pa": 32.9,
+       "abs": 12.7,
+       "susp": 33.2,
+       "perm": 0.6
       }
      },
      {
@@ -542,6 +642,20 @@
        "ns": 9.0,
        "unk": 1.0,
        "cohort": 183.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-08",
+      "drivers": {
+       "pa": 28.8,
+       "abs": 10.0,
+       "susp": 8.0,
+       "perm": 0.5
       }
      },
      {
@@ -567,6 +681,20 @@
        "ns": 12.0,
        "unk": 5.0,
        "cohort": 48.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-11-30",
+      "drivers": {
+       "pa": 25.3,
+       "abs": 7.3,
+       "susp": 6.2,
+       "perm": 0.1
       }
      },
      {
@@ -592,6 +720,20 @@
        "ns": 14.0,
        "unk": 3.0,
        "cohort": 189.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2022-02-03",
+      "drivers": {
+       "pa": 28.9,
+       "abs": 10.4,
+       "susp": 23.0,
+       "perm": 0.7
       }
      },
      {
@@ -617,6 +759,20 @@
        "ns": 14.0,
        "unk": 7.0,
        "cohort": 153.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-09-13",
+      "drivers": {
+       "pa": 31.7,
+       "abs": 9.8,
+       "susp": 1.7,
+       "perm": 0.1
       }
      },
      {
@@ -642,6 +798,19 @@
        "ns": 16.0,
        "unk": 3.0,
        "cohort": 185.0
+      },
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-12-16",
+      "drivers": {
+       "pa": 30.6,
+       "abs": 11.0,
+       "susp": 22.3,
+       "perm": 0.4
       }
      },
      {
@@ -667,6 +836,20 @@
        "ns": 13.0,
        "unk": 5.0,
        "cohort": 96.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-06-19",
+      "drivers": {
+       "pa": 34.4,
+       "abs": 12.2,
+       "susp": 29.4,
+       "perm": 0.5
       }
      },
      {
@@ -692,6 +875,20 @@
        "ns": 14.0,
        "unk": 5.0,
        "cohort": 121.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2021-11-22",
+      "drivers": {
+       "pa": 29.7,
+       "abs": 10.8,
+       "susp": 11.1,
+       "perm": 0.3
       }
      },
      {
@@ -717,6 +914,20 @@
        "ns": 23.0,
        "unk": 4.0,
        "cohort": 101.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 2,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-04-29",
+      "drivers": {
+       "pa": 37.4,
+       "abs": 13.0,
+       "susp": 23.6,
+       "perm": 0.7
       }
      },
      {
@@ -742,6 +953,20 @@
        "ns": 21.0,
        "unk": 2.0,
        "cohort": 90.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-06-29",
+      "drivers": {
+       "pa": 37.8,
+       "abs": 11.4,
+       "susp": 14.2,
+       "perm": 0.5
       }
      }
     ],
@@ -761,7 +986,20 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 97.0,
       "ks2_fsm_pct": 17.0,
-      "sen_all_pct": 10.0
+      "sen_all_pct": 10.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-11-18",
+      "drivers": {
+       "pa": 3.9,
+       "abs": 3.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148781",
@@ -778,7 +1016,13 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 95.0,
       "ks2_fsm_pct": 7.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "drivers": {
+       "pa": 9.1,
+       "abs": 4.4,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148912",
@@ -795,7 +1039,13 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 93.0,
       "ks2_fsm_pct": 31.0,
-      "sen_all_pct": 0.0
+      "sen_all_pct": 0.0,
+      "drivers": {
+       "pa": 4.4,
+       "abs": 3.7,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108818",
@@ -812,7 +1062,18 @@
       "ks2_mat_exp": 96.0,
       "ks2_writ_exp": 93.0,
       "ks2_fsm_pct": 15.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-10-09",
+      "drivers": {
+       "pa": 4.3,
+       "abs": 3.2,
+       "susp": 0.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108836",
@@ -829,7 +1090,18 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 88.0,
       "ks2_fsm_pct": 22.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1
+      },
+      "ofsted_date": "2018-12-13",
+      "drivers": {
+       "pa": 8.2,
+       "abs": 4.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108830",
@@ -846,7 +1118,21 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 90.0,
       "ks2_fsm_pct": 35.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2022-11-13",
+      "drivers": {
+       "pa": 5.4,
+       "abs": 3.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147131",
@@ -863,7 +1149,21 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 87.0,
       "ks2_fsm_pct": 17.0,
-      "sen_all_pct": 17.0
+      "sen_all_pct": 17.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-06-27",
+      "drivers": {
+       "pa": 6.3,
+       "abs": 3.4,
+       "susp": 1.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144221",
@@ -880,7 +1180,13 @@
       "ks2_mat_exp": 87.0,
       "ks2_writ_exp": 85.0,
       "ks2_fsm_pct": 65.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "drivers": {
+       "pa": 19.2,
+       "abs": 4.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148277",
@@ -897,7 +1203,21 @@
       "ks2_mat_exp": 94.0,
       "ks2_writ_exp": 88.0,
       "ks2_fsm_pct": 30.0,
-      "sen_all_pct": 30.0
+      "sen_all_pct": 30.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-01-19",
+      "drivers": {
+       "pa": 12.2,
+       "abs": 4.3,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108816",
@@ -914,7 +1234,21 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 85.0,
       "ks2_fsm_pct": 15.0,
-      "sen_all_pct": 5.0
+      "sen_all_pct": 5.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2019-12-11",
+      "drivers": {
+       "pa": 8.9,
+       "abs": 4.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108843",
@@ -931,7 +1265,18 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 37.0,
-      "sen_all_pct": 30.0
+      "sen_all_pct": 30.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1
+      },
+      "ofsted_date": "2013-04-22",
+      "drivers": {
+       "pa": 8.8,
+       "abs": 4.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144219",
@@ -948,7 +1293,13 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 63.0,
-      "sen_all_pct": 39.0
+      "sen_all_pct": 39.0,
+      "drivers": {
+       "pa": 21.7,
+       "abs": 7.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "138331",
@@ -965,7 +1316,21 @@
       "ks2_mat_exp": 90.0,
       "ks2_writ_exp": 89.0,
       "ks2_fsm_pct": 26.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-12-04",
+      "drivers": {
+       "pa": 9.7,
+       "abs": 4.6,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144224",
@@ -982,7 +1347,13 @@
       "ks2_mat_exp": 88.0,
       "ks2_writ_exp": 92.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "drivers": {
+       "pa": 6.5,
+       "abs": 4.3,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108786",
@@ -999,7 +1370,21 @@
       "ks2_mat_exp": 88.0,
       "ks2_writ_exp": 80.0,
       "ks2_fsm_pct": 12.0,
-      "sen_all_pct": 12.0
+      "sen_all_pct": 12.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-11-08",
+      "drivers": {
+       "pa": 11.3,
+       "abs": 4.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108833",
@@ -1016,7 +1401,18 @@
       "ks2_mat_exp": 85.0,
       "ks2_writ_exp": 90.0,
       "ks2_fsm_pct": 40.0,
-      "sen_all_pct": 15.0
+      "sen_all_pct": 15.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2012-04-05",
+      "drivers": {
+       "pa": 11.0,
+       "abs": 4.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147138",
@@ -1033,7 +1429,21 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 80.0,
       "ks2_fsm_pct": 13.0,
-      "sen_all_pct": 7.0
+      "sen_all_pct": 7.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-06-09",
+      "drivers": {
+       "pa": 6.9,
+       "abs": 4.0,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108784",
@@ -1050,7 +1460,18 @@
       "ks2_mat_exp": 87.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 20.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-12-18",
+      "drivers": {
+       "pa": 6.1,
+       "abs": 3.8,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108763",
@@ -1067,7 +1488,21 @@
       "ks2_mat_exp": 86.0,
       "ks2_writ_exp": 87.0,
       "ks2_fsm_pct": 10.0,
-      "sen_all_pct": 11.0
+      "sen_all_pct": 11.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2022-05-09",
+      "drivers": {
+       "pa": 4.5,
+       "abs": 4.0,
+       "susp": 0.6,
+       "perm": 0.3
+      }
      },
      {
       "urn": "108837",
@@ -1084,7 +1519,18 @@
       "ks2_mat_exp": 84.0,
       "ks2_writ_exp": 87.0,
       "ks2_fsm_pct": 13.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-10-29",
+      "drivers": {
+       "pa": 12.4,
+       "abs": 4.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "136487",
@@ -1101,7 +1547,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 57.0,
-      "sen_all_pct": 32.0
+      "sen_all_pct": 32.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2022-07-27",
+      "drivers": {
+       "pa": 12.8,
+       "abs": 4.9,
+       "susp": 1.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147147",
@@ -1118,7 +1578,21 @@
       "ks2_mat_exp": 87.0,
       "ks2_writ_exp": 80.0,
       "ks2_fsm_pct": 30.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-03-25",
+      "drivers": {
+       "pa": 6.9,
+       "abs": 3.5,
+       "susp": 0.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108792",
@@ -1135,7 +1609,21 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 76.0,
       "ks2_fsm_pct": 31.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-18",
+      "drivers": {
+       "pa": 17.0,
+       "abs": 5.7,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108783",
@@ -1152,7 +1640,21 @@
       "ks2_mat_exp": 88.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 91.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2023-07-20",
+      "drivers": {
+       "pa": 18.1,
+       "abs": 6.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "138534",
@@ -1169,7 +1671,18 @@
       "ks2_mat_exp": 84.0,
       "ks2_writ_exp": 87.0,
       "ks2_fsm_pct": 19.0,
-      "sen_all_pct": 10.0
+      "sen_all_pct": 10.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-04-01",
+      "drivers": {
+       "pa": 4.6,
+       "abs": 3.7,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "142997",
@@ -1186,7 +1699,13 @@
       "ks2_mat_exp": 85.0,
       "ks2_writ_exp": 78.0,
       "ks2_fsm_pct": 22.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "drivers": {
+       "pa": 8.0,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "149036",
@@ -1203,7 +1722,20 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 85.0,
       "ks2_fsm_pct": 48.0,
-      "sen_all_pct": 26.0
+      "sen_all_pct": 26.0,
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2024-10-22",
+      "drivers": {
+       "pa": 8.9,
+       "abs": 5.2,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108794",
@@ -1220,7 +1752,18 @@
       "ks2_mat_exp": 83.0,
       "ks2_writ_exp": 94.0,
       "ks2_fsm_pct": 33.0,
-      "sen_all_pct": 17.0
+      "sen_all_pct": 17.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-11-06",
+      "drivers": {
+       "pa": 7.5,
+       "abs": 4.0,
+       "susp": 1.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147123",
@@ -1237,7 +1780,21 @@
       "ks2_mat_exp": 88.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 13.0,
-      "sen_all_pct": 6.0
+      "sen_all_pct": 6.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-12-18",
+      "drivers": {
+       "pa": 5.1,
+       "abs": 3.6,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108826",
@@ -1254,7 +1811,18 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 4.0
+      "sen_all_pct": 4.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2012-10-30",
+      "drivers": {
+       "pa": 21.5,
+       "abs": 6.8,
+       "susp": 1.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "137463",
@@ -1271,7 +1839,21 @@
       "ks2_mat_exp": 76.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 28.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-05-25",
+      "drivers": {
+       "pa": 10.5,
+       "abs": 4.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108799",
@@ -1288,7 +1870,21 @@
       "ks2_mat_exp": 83.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 44.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2020-02-03",
+      "drivers": {
+       "pa": 20.9,
+       "abs": 6.7,
+       "susp": 0.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144447",
@@ -1305,7 +1901,13 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 72.0,
       "ks2_fsm_pct": 45.0,
-      "sen_all_pct": 17.0
+      "sen_all_pct": 17.0,
+      "drivers": {
+       "pa": 18.2,
+       "abs": 6.7,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108772",
@@ -1322,7 +1924,21 @@
       "ks2_mat_exp": 83.0,
       "ks2_writ_exp": 68.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2023-07-06",
+      "drivers": {
+       "pa": 13.8,
+       "abs": 4.5,
+       "susp": 0.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140584",
@@ -1339,7 +1955,18 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 22.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2017-02-15",
+      "drivers": {
+       "pa": 8.4,
+       "abs": 4.4,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143363",
@@ -1356,7 +1983,13 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "drivers": {
+       "pa": 13.9,
+       "abs": 5.0,
+       "susp": 1.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148913",
@@ -1373,7 +2006,13 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 63.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "drivers": {
+       "pa": 16.4,
+       "abs": 5.5,
+       "susp": 1.6,
+       "perm": 1.0
+      }
      },
      {
       "urn": "149524",
@@ -1390,7 +2029,13 @@
       "ks2_mat_exp": 86.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 61.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "drivers": {
+       "pa": 20.0,
+       "abs": 6.7,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108787",
@@ -1407,7 +2052,21 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 49.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-25",
+      "drivers": {
+       "pa": 14.9,
+       "abs": 5.4,
+       "susp": 0.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147139",
@@ -1424,7 +2083,21 @@
       "ks2_mat_exp": 75.0,
       "ks2_writ_exp": 79.0,
       "ks2_fsm_pct": 17.0,
-      "sen_all_pct": 8.0
+      "sen_all_pct": 8.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2022-07-13",
+      "drivers": {
+       "pa": 6.3,
+       "abs": 3.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148780",
@@ -1441,7 +2114,21 @@
       "ks2_mat_exp": 72.0,
       "ks2_writ_exp": 79.0,
       "ks2_fsm_pct": 10.0,
-      "sen_all_pct": 7.0
+      "sen_all_pct": 7.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-03-23",
+      "drivers": {
+       "pa": 9.0,
+       "abs": 4.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139389",
@@ -1458,7 +2145,18 @@
       "ks2_mat_exp": 65.0,
       "ks2_writ_exp": 70.0,
       "ks2_fsm_pct": 52.0,
-      "sen_all_pct": 30.0
+      "sen_all_pct": 30.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-04-27",
+      "drivers": {
+       "pa": 21.6,
+       "abs": 6.4,
+       "susp": 0.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144223",
@@ -1475,7 +2173,13 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 37.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "drivers": {
+       "pa": 16.7,
+       "abs": 6.1,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108819",
@@ -1492,7 +2196,18 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 70.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-11-10",
+      "drivers": {
+       "pa": 21.1,
+       "abs": 6.1,
+       "susp": 1.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108758",
@@ -1509,7 +2224,18 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 67.0,
       "ks2_fsm_pct": 47.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2017-07-06",
+      "drivers": {
+       "pa": 22.1,
+       "abs": 7.3,
+       "susp": 0.6,
+       "perm": 0.3
+      }
      },
      {
       "urn": "108795",
@@ -1526,7 +2252,18 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 54.0,
-      "sen_all_pct": 14.0
+      "sen_all_pct": 14.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-03-19",
+      "drivers": {
+       "pa": 21.1,
+       "abs": 6.5,
+       "susp": 2.6,
+       "perm": 0.3
+      }
      },
      {
       "urn": "108828",
@@ -1543,7 +2280,21 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 54.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2023-11-13",
+      "drivers": {
+       "pa": 21.6,
+       "abs": 6.0,
+       "susp": 0.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140700",
@@ -1560,7 +2311,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 72.0,
       "ks2_fsm_pct": 38.0,
-      "sen_all_pct": 31.0
+      "sen_all_pct": 31.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2023-09-17",
+      "drivers": {
+       "pa": 6.5,
+       "abs": 3.7,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143524",
@@ -1577,7 +2342,20 @@
       "ks2_mat_exp": 73.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 47.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 1,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2024-12-05",
+      "drivers": {
+       "pa": 16.0,
+       "abs": 5.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "138213",
@@ -1594,7 +2372,20 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 65.0,
       "ks2_fsm_pct": 46.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-11-12",
+      "drivers": {
+       "pa": 7.9,
+       "abs": 3.9,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144220",
@@ -1611,7 +2402,13 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 52.0,
-      "sen_all_pct": 28.0
+      "sen_all_pct": 28.0,
+      "drivers": {
+       "pa": 17.6,
+       "abs": 6.2,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108835",
@@ -1628,7 +2425,21 @@
       "ks2_mat_exp": 64.0,
       "ks2_writ_exp": 68.0,
       "ks2_fsm_pct": 68.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-12-14",
+      "drivers": {
+       "pa": 14.4,
+       "abs": 5.4,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139103",
@@ -1645,7 +2456,21 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 57.0,
-      "sen_all_pct": 14.0
+      "sen_all_pct": 14.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-05",
+      "drivers": {
+       "pa": 24.7,
+       "abs": 7.1,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144225",
@@ -1662,7 +2487,13 @@
       "ks2_mat_exp": 85.0,
       "ks2_writ_exp": 78.0,
       "ks2_fsm_pct": 32.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "drivers": {
+       "pa": 15.5,
+       "abs": 5.4,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139391",
@@ -1679,7 +2510,18 @@
       "ks2_mat_exp": 63.0,
       "ks2_writ_exp": 58.0,
       "ks2_fsm_pct": 75.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-03-25",
+      "drivers": {
+       "pa": 22.7,
+       "abs": 7.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148452",
@@ -1696,7 +2538,21 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 79.0,
       "ks2_fsm_pct": 42.0,
-      "sen_all_pct": 42.0
+      "sen_all_pct": 42.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-04-30",
+      "drivers": {
+       "pa": 6.6,
+       "abs": 3.7,
+       "susp": 1.2,
+       "perm": 0.6
+      }
      },
      {
       "urn": "131036",
@@ -1713,7 +2569,18 @@
       "ks2_mat_exp": 68.0,
       "ks2_writ_exp": 75.0,
       "ks2_fsm_pct": 57.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2017-12-07",
+      "drivers": {
+       "pa": 15.2,
+       "abs": 5.8,
+       "susp": 1.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "142996",
@@ -1730,7 +2597,13 @@
       "ks2_mat_exp": 57.0,
       "ks2_writ_exp": 57.0,
       "ks2_fsm_pct": 64.0,
-      "sen_all_pct": 64.0
+      "sen_all_pct": 64.0,
+      "drivers": {
+       "pa": 6.6,
+       "abs": 4.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108757",
@@ -1747,7 +2620,18 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-12-24",
+      "drivers": {
+       "pa": 14.4,
+       "abs": 5.6,
+       "susp": 2.1,
+       "perm": 0.4
+      }
      },
      {
       "urn": "138976",
@@ -1764,7 +2648,21 @@
       "ks2_mat_exp": 64.0,
       "ks2_writ_exp": 64.0,
       "ks2_fsm_pct": 64.0,
-      "sen_all_pct": 45.0
+      "sen_all_pct": 45.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-01-29",
+      "drivers": {
+       "pa": 18.8,
+       "abs": 6.5,
+       "susp": 3.5,
+       "perm": 0.4
+      }
      },
      {
       "urn": "108803",
@@ -1781,7 +2679,18 @@
       "ks2_mat_exp": 65.0,
       "ks2_writ_exp": 65.0,
       "ks2_fsm_pct": 65.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-02-25",
+      "drivers": {
+       "pa": 21.9,
+       "abs": 6.9,
+       "susp": 2.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "136486",
@@ -1798,7 +2707,21 @@
       "ks2_mat_exp": 73.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 62.0,
-      "sen_all_pct": 35.0
+      "sen_all_pct": 35.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2020-02-10",
+      "drivers": {
+       "pa": 9.8,
+       "abs": 4.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148782",
@@ -1815,7 +2738,20 @@
       "ks2_mat_exp": 64.0,
       "ks2_writ_exp": 68.0,
       "ks2_fsm_pct": 36.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2025-01-16",
+      "drivers": {
+       "pa": 12.6,
+       "abs": 5.5,
+       "susp": 1.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140684",
@@ -1832,7 +2768,21 @@
       "ks2_mat_exp": 63.0,
       "ks2_writ_exp": 70.0,
       "ks2_fsm_pct": 59.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-26",
+      "drivers": {
+       "pa": 15.7,
+       "abs": 5.7,
+       "susp": 1.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108769",
@@ -1849,7 +2799,21 @@
       "ks2_mat_exp": 60.0,
       "ks2_writ_exp": 66.0,
       "ks2_fsm_pct": 74.0,
-      "sen_all_pct": 37.0
+      "sen_all_pct": 37.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-09-21",
+      "drivers": {
+       "pa": 30.8,
+       "abs": 8.5,
+       "susp": 0.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143415",
@@ -1866,7 +2830,18 @@
       "ks2_mat_exp": 65.0,
       "ks2_writ_exp": 76.0,
       "ks2_fsm_pct": 53.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-07-07",
+      "drivers": {
+       "pa": 14.0,
+       "abs": 5.8,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108832",
@@ -1883,7 +2858,18 @@
       "ks2_mat_exp": 63.0,
       "ks2_writ_exp": 63.0,
       "ks2_fsm_pct": 37.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2012-02-27",
+      "drivers": {
+       "pa": 11.8,
+       "abs": 4.8,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108765",
@@ -1900,7 +2886,21 @@
       "ks2_mat_exp": 65.0,
       "ks2_writ_exp": 48.0,
       "ks2_fsm_pct": 55.0,
-      "sen_all_pct": 42.0
+      "sen_all_pct": 42.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2023-12-08",
+      "drivers": {
+       "pa": 21.7,
+       "abs": 6.9,
+       "susp": 3.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108755",
@@ -1917,7 +2917,18 @@
       "ks2_mat_exp": 47.0,
       "ks2_writ_exp": 51.0,
       "ks2_fsm_pct": 34.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-06-17",
+      "drivers": {
+       "pa": 16.3,
+       "abs": 5.8,
+       "susp": 0.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108817",
@@ -1934,7 +2945,18 @@
       "ks2_mat_exp": 58.0,
       "ks2_writ_exp": 46.0,
       "ks2_fsm_pct": 38.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-05-08",
+      "drivers": {
+       "pa": 13.6,
+       "abs": 5.9,
+       "susp": 3.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "134532",
@@ -1951,7 +2973,18 @@
       "ks2_mat_exp": 40.0,
       "ks2_writ_exp": 50.0,
       "ks2_fsm_pct": 47.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1
+      },
+      "ofsted_date": "2013-12-17",
+      "drivers": {
+       "pa": 19.3,
+       "abs": 6.2,
+       "susp": 1.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108822",
@@ -1968,7 +3001,21 @@
       "ks2_mat_exp": 47.0,
       "ks2_writ_exp": 67.0,
       "ks2_fsm_pct": 73.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-05-24",
+      "drivers": {
+       "pa": 16.8,
+       "abs": 6.1,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143493",
@@ -1985,7 +3032,13 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 85.0,
-      "sen_all_pct": 46.0
+      "sen_all_pct": 46.0,
+      "drivers": {
+       "pa": 30.6,
+       "abs": 7.6,
+       "susp": 2.8,
+       "perm": 0.7
+      }
      },
      {
       "urn": "108766",
@@ -2002,7 +3055,18 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2016-10-18",
+      "drivers": {
+       "pa": 22.1,
+       "abs": 6.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139026",
@@ -2019,7 +3083,18 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1
+      },
+      "ofsted_date": "2014-07-22",
+      "drivers": {
+       "pa": 6.5,
+       "abs": 4.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139849",
@@ -2036,7 +3111,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 13.8,
+       "abs": 4.6,
+       "susp": 0.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140928",
@@ -2053,7 +3134,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 14.1,
+       "abs": 5.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141045",
@@ -2070,7 +3157,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 16.3,
+       "abs": 6.0,
+       "susp": 1.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143414",
@@ -2087,7 +3180,18 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-07-03",
+      "drivers": {
+       "pa": 14.6,
+       "abs": 5.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144222",
@@ -2104,7 +3208,21 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2022-10-16",
+      "drivers": {
+       "pa": 9.3,
+       "abs": 4.4,
+       "susp": 0.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151412",
@@ -2237,6 +3355,20 @@
        "ns": 4.0,
        "unk": 0.0,
        "cohort": 192.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2019-12-03",
+      "drivers": {
+       "pa": 15.9,
+       "abs": 6.2,
+       "susp": 5.0,
+       "perm": 0.4
       }
      },
      {
@@ -2262,6 +3394,17 @@
        "ns": 6.0,
        "unk": 1.0,
        "cohort": 199.0
+      },
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1
+      },
+      "ofsted_date": "2018-11-04",
+      "drivers": {
+       "pa": 28.5,
+       "abs": 9.8,
+       "susp": 13.0,
+       "perm": 0.4
       }
      },
      {
@@ -2287,6 +3430,20 @@
        "ns": 6.0,
        "unk": 1.0,
        "cohort": 197.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-11-23",
+      "drivers": {
+       "pa": 25.4,
+       "abs": 9.3,
+       "susp": 5.4,
+       "perm": 0.4
       }
      },
      {
@@ -2312,6 +3469,20 @@
        "ns": 10.0,
        "unk": 5.0,
        "cohort": 106.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-06-29",
+      "drivers": {
+       "pa": 32.2,
+       "abs": 10.8,
+       "susp": 9.8,
+       "perm": 0.6
       }
      },
      {
@@ -2337,6 +3508,20 @@
        "ns": 9.0,
        "unk": 4.0,
        "cohort": 142.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-09-21",
+      "drivers": {
+       "pa": 29.1,
+       "abs": 11.3,
+       "susp": 10.4,
+       "perm": 0.2
       }
      },
      {
@@ -2362,6 +3547,20 @@
        "ns": 6.0,
        "unk": 1.0,
        "cohort": 250.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-20",
+      "drivers": {
+       "pa": 27.2,
+       "abs": 10.0,
+       "susp": 2.6,
+       "perm": 0.2
       }
      },
      {
@@ -2387,6 +3586,20 @@
        "ns": 8.0,
        "unk": 3.0,
        "cohort": 184.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2019-10-14",
+      "drivers": {
+       "pa": 33.6,
+       "abs": 11.4,
+       "susp": 11.4,
+       "perm": 0.4
       }
      },
      {
@@ -2412,6 +3625,20 @@
        "ns": 17.0,
        "unk": 4.0,
        "cohort": 136.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2019-10-06",
+      "drivers": {
+       "pa": 33.7,
+       "abs": 12.5,
+       "susp": 15.1,
+       "perm": 0.0
       }
      }
     ],
@@ -2431,7 +3658,20 @@
       "ks2_mat_exp": 100.0,
       "ks2_writ_exp": 93.0,
       "ks2_fsm_pct": 67.0,
-      "sen_all_pct": 28.0
+      "sen_all_pct": 28.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2024-11-12",
+      "drivers": {
+       "pa": 15.4,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108676",
@@ -2448,7 +3688,21 @@
       "ks2_mat_exp": 97.0,
       "ks2_writ_exp": 86.0,
       "ks2_fsm_pct": 76.0,
-      "sen_all_pct": 41.0
+      "sen_all_pct": 41.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2023-07-02",
+      "drivers": {
+       "pa": 6.6,
+       "abs": 3.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108701",
@@ -2465,7 +3719,21 @@
       "ks2_mat_exp": 86.0,
       "ks2_writ_exp": 82.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 46.0
+      "sen_all_pct": 46.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2021-11-15",
+      "drivers": {
+       "pa": 17.7,
+       "abs": 6.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148779",
@@ -2482,7 +3750,13 @@
       "ks2_mat_exp": 86.0,
       "ks2_writ_exp": 82.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "drivers": {
+       "pa": 15.4,
+       "abs": 5.9,
+       "susp": 1.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108692",
@@ -2499,7 +3773,21 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 12.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-06-28",
+      "drivers": {
+       "pa": 9.3,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140924",
@@ -2516,7 +3804,21 @@
       "ks2_mat_exp": 86.0,
       "ks2_writ_exp": 86.0,
       "ks2_fsm_pct": 5.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-04-17",
+      "drivers": {
+       "pa": 3.9,
+       "abs": 3.7,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148486",
@@ -2533,7 +3835,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 77.0,
       "ks2_fsm_pct": 19.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-07-02",
+      "drivers": {
+       "pa": 12.8,
+       "abs": 4.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148606",
@@ -2550,7 +3866,13 @@
       "ks2_mat_exp": 90.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 37.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "drivers": {
+       "pa": 16.0,
+       "abs": 5.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108686",
@@ -2567,7 +3889,18 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 78.0,
       "ks2_fsm_pct": 38.0,
-      "sen_all_pct": 32.0
+      "sen_all_pct": 32.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-03-28",
+      "drivers": {
+       "pa": 7.3,
+       "abs": 4.7,
+       "susp": 0.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147102",
@@ -2584,7 +3917,21 @@
       "ks2_mat_exp": 87.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2023-09-26",
+      "drivers": {
+       "pa": 13.0,
+       "abs": 5.8,
+       "susp": 0.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148778",
@@ -2601,7 +3948,13 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "drivers": {
+       "pa": 11.8,
+       "abs": 5.3,
+       "susp": 2.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108694",
@@ -2618,7 +3971,18 @@
       "ks2_mat_exp": 90.0,
       "ks2_writ_exp": 90.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1
+      },
+      "ofsted_date": "2014-07-23",
+      "drivers": {
+       "pa": 6.7,
+       "abs": 4.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "136178",
@@ -2635,7 +3999,18 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 75.0,
       "ks2_fsm_pct": 52.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-12-12",
+      "drivers": {
+       "pa": 18.8,
+       "abs": 6.2,
+       "susp": 1.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "149034",
@@ -2652,7 +4027,21 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 13.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-01-21",
+      "drivers": {
+       "pa": 4.7,
+       "abs": 3.8,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108700",
@@ -2669,7 +4058,21 @@
       "ks2_mat_exp": 71.0,
       "ks2_writ_exp": 75.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 3,
+       "ba": 2
+      },
+      "ofsted_date": "2024-01-29",
+      "drivers": {
+       "pa": 15.4,
+       "abs": 5.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148274",
@@ -2686,7 +4089,21 @@
       "ks2_mat_exp": 76.0,
       "ks2_writ_exp": 90.0,
       "ks2_fsm_pct": 21.0,
-      "sen_all_pct": 19.0
+      "sen_all_pct": 19.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2023-01-18",
+      "drivers": {
+       "pa": 7.9,
+       "abs": 4.5,
+       "susp": 0.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148911",
@@ -2703,7 +4120,13 @@
       "ks2_mat_exp": 75.0,
       "ks2_writ_exp": 82.0,
       "ks2_fsm_pct": 18.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "drivers": {
+       "pa": 13.1,
+       "abs": 5.0,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108687",
@@ -2720,7 +4143,18 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 43.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-03-11",
+      "drivers": {
+       "pa": 10.9,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "135842",
@@ -2737,7 +4171,18 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 85.0,
       "ks2_fsm_pct": 64.0,
-      "sen_all_pct": 39.0
+      "sen_all_pct": 39.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-04-02",
+      "drivers": {
+       "pa": 13.0,
+       "abs": 5.4,
+       "susp": 0.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108711",
@@ -2754,7 +4199,20 @@
       "ks2_mat_exp": 72.0,
       "ks2_writ_exp": 79.0,
       "ks2_fsm_pct": 28.0,
-      "sen_all_pct": 31.0
+      "sen_all_pct": 31.0,
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-11-14",
+      "drivers": {
+       "pa": 14.3,
+       "abs": 5.7,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108672",
@@ -2771,7 +4229,18 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 68.0,
       "ks2_fsm_pct": 65.0,
-      "sen_all_pct": 19.0
+      "sen_all_pct": 19.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1
+      },
+      "ofsted_date": "2012-11-21",
+      "drivers": {
+       "pa": 15.1,
+       "abs": 5.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "133680",
@@ -2788,7 +4257,20 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 70.0,
       "ks2_fsm_pct": 51.0,
-      "sen_all_pct": 28.0
+      "sen_all_pct": 28.0,
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-11-11",
+      "drivers": {
+       "pa": 11.8,
+       "abs": 5.2,
+       "susp": 2.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "134187",
@@ -2805,7 +4287,18 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 26.0,
-      "sen_all_pct": 30.0
+      "sen_all_pct": 30.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-01-28",
+      "drivers": {
+       "pa": 11.6,
+       "abs": 4.9,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "134230",
@@ -2822,7 +4315,21 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 52.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-07-16",
+      "drivers": {
+       "pa": 21.1,
+       "abs": 7.0,
+       "susp": 4.9,
+       "perm": 0.2
+      }
      },
      {
       "urn": "141160",
@@ -2839,7 +4346,13 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 72.0,
       "ks2_fsm_pct": 83.0,
-      "sen_all_pct": 31.0
+      "sen_all_pct": 31.0,
+      "drivers": {
+       "pa": 12.2,
+       "abs": 4.8,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108699",
@@ -2856,7 +4369,21 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 57.0,
-      "sen_all_pct": 37.0
+      "sen_all_pct": 37.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-09-10",
+      "drivers": {
+       "pa": 14.1,
+       "abs": 5.3,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108704",
@@ -2873,7 +4400,21 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 45.0,
-      "sen_all_pct": 33.0
+      "sen_all_pct": 33.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 3,
+       "ba": 2
+      },
+      "ofsted_date": "2022-06-23",
+      "drivers": {
+       "pa": 16.5,
+       "abs": 5.4,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108668",
@@ -2890,7 +4431,21 @@
       "ks2_mat_exp": 68.0,
       "ks2_writ_exp": 76.0,
       "ks2_fsm_pct": 46.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2022-12-15",
+      "drivers": {
+       "pa": 16.9,
+       "abs": 6.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108673",
@@ -2907,7 +4462,21 @@
       "ks2_mat_exp": 70.0,
       "ks2_writ_exp": 65.0,
       "ks2_fsm_pct": 15.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-10",
+      "drivers": {
+       "pa": 9.1,
+       "abs": 4.5,
+       "susp": 0.2,
+       "perm": 0.2
+      }
      },
      {
       "urn": "108693",
@@ -2924,7 +4493,21 @@
       "ks2_mat_exp": 64.0,
       "ks2_writ_exp": 68.0,
       "ks2_fsm_pct": 29.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-05-18",
+      "drivers": {
+       "pa": 12.4,
+       "abs": 4.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151234",
@@ -2941,7 +4524,13 @@
       "ks2_mat_exp": 54.0,
       "ks2_writ_exp": 62.0,
       "ks2_fsm_pct": 35.0,
-      "sen_all_pct": 50.0
+      "sen_all_pct": 50.0,
+      "drivers": {
+       "pa": 21.8,
+       "abs": 6.8,
+       "susp": 1.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139124",
@@ -2958,7 +4547,18 @@
       "ks2_mat_exp": 66.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 59.0,
-      "sen_all_pct": 39.0
+      "sen_all_pct": 39.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2016-12-19",
+      "drivers": {
+       "pa": 19.5,
+       "abs": 6.7,
+       "susp": 1.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148276",
@@ -2975,7 +4575,13 @@
       "ks2_mat_exp": 70.0,
       "ks2_writ_exp": 80.0,
       "ks2_fsm_pct": 20.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "drivers": {
+       "pa": 10.7,
+       "abs": 4.8,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "149035",
@@ -2992,7 +4598,20 @@
       "ks2_mat_exp": 66.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 28.0,
-      "sen_all_pct": 38.0
+      "sen_all_pct": 38.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2025-01-23",
+      "drivers": {
+       "pa": 10.9,
+       "abs": 4.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "149321",
@@ -3009,7 +4628,13 @@
       "ks2_mat_exp": 55.0,
       "ks2_writ_exp": 77.0,
       "ks2_fsm_pct": 52.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "drivers": {
+       "pa": 14.7,
+       "abs": 5.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108698",
@@ -3026,7 +4651,21 @@
       "ks2_mat_exp": 66.0,
       "ks2_writ_exp": 63.0,
       "ks2_fsm_pct": 51.0,
-      "sen_all_pct": 34.0
+      "sen_all_pct": 34.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-01-21",
+      "drivers": {
+       "pa": 15.7,
+       "abs": 6.5,
+       "susp": 2.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "136163",
@@ -3043,7 +4682,18 @@
       "ks2_mat_exp": 42.0,
       "ks2_writ_exp": 55.0,
       "ks2_fsm_pct": 44.0,
-      "sen_all_pct": 27.0
+      "sen_all_pct": 27.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-02-07",
+      "drivers": {
+       "pa": 11.6,
+       "abs": 4.6,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "138025",
@@ -3060,7 +4710,18 @@
       "ks2_mat_exp": 56.0,
       "ks2_writ_exp": 51.0,
       "ks2_fsm_pct": 79.0,
-      "sen_all_pct": 9.0
+      "sen_all_pct": 9.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-04-30",
+      "drivers": {
+       "pa": 17.7,
+       "abs": 5.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108682",
@@ -3077,7 +4738,18 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-07-11",
+      "drivers": {
+       "pa": 12.6,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "108688",
@@ -3094,7 +4766,21 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-07-25",
+      "drivers": {
+       "pa": 6.8,
+       "abs": 3.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139314",
@@ -3111,7 +4797,20 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-11-20",
+      "drivers": {
+       "pa": 33.8,
+       "abs": 8.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148275",
@@ -3128,7 +4827,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 7.5,
+       "abs": 3.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151264",
@@ -3145,7 +4850,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 16.5,
+       "abs": 5.7,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151265",
@@ -3162,7 +4873,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 9.0,
+       "abs": 4.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151290",
@@ -3179,7 +4896,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 18.9,
+       "abs": 6.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      }
     ]
    }
@@ -3282,6 +5005,12 @@
        "ns": 4.0,
        "unk": 2.0,
        "cohort": 106.0
+      },
+      "drivers": {
+       "pa": 19.8,
+       "abs": 7.2,
+       "susp": 2.7,
+       "perm": 0.0
       }
      },
      {
@@ -3307,6 +5036,12 @@
        "ns": 5.0,
        "unk": 5.0,
        "cohort": 172.0
+      },
+      "drivers": {
+       "pa": 29.6,
+       "abs": 10.8,
+       "susp": 21.5,
+       "perm": 0.0
       }
      },
      {
@@ -3332,6 +5067,20 @@
        "ns": 23.0,
        "unk": 0.0,
        "cohort": 30.0
+      },
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-01-15",
+      "drivers": {
+       "pa": 29.5,
+       "abs": 8.9,
+       "susp": 18.6,
+       "perm": 0.0
       }
      },
      {
@@ -3357,6 +5106,20 @@
        "ns": 3.0,
        "unk": 3.0,
        "cohort": 110.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 3,
+       "ba": 3
+      },
+      "ofsted_date": "2024-01-21",
+      "drivers": {
+       "pa": 37.0,
+       "abs": 13.1,
+       "susp": 7.1,
+       "perm": 0.0
       }
      },
      {
@@ -3382,6 +5145,20 @@
        "ns": 7.0,
        "unk": 3.0,
        "cohort": 143.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2023-09-19",
+      "drivers": {
+       "pa": 41.0,
+       "abs": 13.4,
+       "susp": 13.1,
+       "perm": 0.3
       }
      },
      {
@@ -3407,6 +5184,12 @@
        "ns": 6.0,
        "unk": 1.0,
        "cohort": 78.0
+      },
+      "drivers": {
+       "pa": 35.9,
+       "abs": 13.1,
+       "susp": 22.3,
+       "perm": 0.0
       }
      },
      {
@@ -3432,6 +5215,20 @@
        "ns": 12.0,
        "unk": 4.0,
        "cohort": 101.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2022-12-15",
+      "drivers": {
+       "pa": 38.5,
+       "abs": 14.2,
+       "susp": 36.3,
+       "perm": 0.1
       }
      }
     ],
@@ -3451,7 +5248,13 @@
       "ks2_mat_exp": 90.0,
       "ks2_writ_exp": 90.0,
       "ks2_fsm_pct": 45.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "drivers": {
+       "pa": 16.2,
+       "abs": 6.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121615",
@@ -3468,7 +5271,18 @@
       "ks2_mat_exp": 85.0,
       "ks2_writ_exp": 82.0,
       "ks2_fsm_pct": 21.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-09-16",
+      "drivers": {
+       "pa": 12.2,
+       "abs": 5.7,
+       "susp": 0.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140018",
@@ -3485,7 +5299,21 @@
       "ks2_mat_exp": 88.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 2,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2023-03-20",
+      "drivers": {
+       "pa": 13.5,
+       "abs": 5.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121507",
@@ -3502,7 +5330,18 @@
       "ks2_mat_exp": 83.0,
       "ks2_writ_exp": 92.0,
       "ks2_fsm_pct": 8.0,
-      "sen_all_pct": 8.0
+      "sen_all_pct": 8.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-06-06",
+      "drivers": {
+       "pa": 4.9,
+       "abs": 4.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "146112",
@@ -3519,7 +5358,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 85.0,
       "ks2_fsm_pct": 37.0,
-      "sen_all_pct": 7.0
+      "sen_all_pct": 7.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-03-30",
+      "drivers": {
+       "pa": 15.5,
+       "abs": 5.3,
+       "susp": 0.5,
+       "perm": 0.5
+      }
      },
      {
       "urn": "121319",
@@ -3536,7 +5389,21 @@
       "ks2_mat_exp": 76.0,
       "ks2_writ_exp": 77.0,
       "ks2_fsm_pct": 36.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-09-21",
+      "drivers": {
+       "pa": 16.1,
+       "abs": 5.6,
+       "susp": 0.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143290",
@@ -3553,7 +5420,13 @@
       "ks2_mat_exp": 72.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 38.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "drivers": {
+       "pa": 17.2,
+       "abs": 5.6,
+       "susp": 1.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121534",
@@ -3570,7 +5443,21 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 5.0
+      "sen_all_pct": 5.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-10-08",
+      "drivers": {
+       "pa": 13.7,
+       "abs": 5.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121321",
@@ -3587,7 +5474,21 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 44.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-04-17",
+      "drivers": {
+       "pa": 14.3,
+       "abs": 6.5,
+       "susp": 2.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "145633",
@@ -3604,7 +5505,21 @@
       "ks2_mat_exp": 77.0,
       "ks2_writ_exp": 75.0,
       "ks2_fsm_pct": 18.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-11-13",
+      "drivers": {
+       "pa": 8.6,
+       "abs": 4.8,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147278",
@@ -3621,7 +5536,21 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 77.0,
       "ks2_fsm_pct": 20.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-04-29",
+      "drivers": {
+       "pa": 11.7,
+       "abs": 5.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121358",
@@ -3638,7 +5567,18 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 23.0
+      "sen_all_pct": 23.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2015-11-09",
+      "drivers": {
+       "pa": 9.2,
+       "abs": 4.6,
+       "susp": 1.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121451",
@@ -3655,7 +5595,21 @@
       "ks2_mat_exp": 70.0,
       "ks2_writ_exp": 67.0,
       "ks2_fsm_pct": 27.0,
-      "sen_all_pct": 10.0
+      "sen_all_pct": 10.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-06-11",
+      "drivers": {
+       "pa": 12.9,
+       "abs": 5.8,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121377",
@@ -3672,7 +5626,21 @@
       "ks2_mat_exp": 66.0,
       "ks2_writ_exp": 76.0,
       "ks2_fsm_pct": 10.0,
-      "sen_all_pct": 14.0
+      "sen_all_pct": 14.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-26",
+      "drivers": {
+       "pa": 14.5,
+       "abs": 5.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144681",
@@ -3689,7 +5657,21 @@
       "ks2_mat_exp": 71.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-06-22",
+      "drivers": {
+       "pa": 18.9,
+       "abs": 6.1,
+       "susp": 1.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121357",
@@ -3706,7 +5688,18 @@
       "ks2_mat_exp": 72.0,
       "ks2_writ_exp": 72.0,
       "ks2_fsm_pct": 21.0,
-      "sen_all_pct": 19.0
+      "sen_all_pct": 19.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2014-07-03",
+      "drivers": {
+       "pa": 8.9,
+       "abs": 4.8,
+       "susp": 1.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121486",
@@ -3723,7 +5716,21 @@
       "ks2_mat_exp": 57.0,
       "ks2_writ_exp": 86.0,
       "ks2_fsm_pct": 0.0,
-      "sen_all_pct": 29.0
+      "sen_all_pct": 29.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-02-14",
+      "drivers": {
+       "pa": 12.2,
+       "abs": 4.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121491",
@@ -3740,7 +5747,21 @@
       "ks2_mat_exp": 69.0,
       "ks2_writ_exp": 81.0,
       "ks2_fsm_pct": 25.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2019-12-01",
+      "drivers": {
+       "pa": 6.2,
+       "abs": 4.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121336",
@@ -3757,7 +5778,18 @@
       "ks2_mat_exp": 71.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 35.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-01-17",
+      "drivers": {
+       "pa": 16.9,
+       "abs": 6.5,
+       "susp": 2.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121459",
@@ -3774,7 +5806,18 @@
       "ks2_mat_exp": 70.0,
       "ks2_writ_exp": 62.0,
       "ks2_fsm_pct": 38.0,
-      "sen_all_pct": 13.0
+      "sen_all_pct": 13.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2018-05-24",
+      "drivers": {
+       "pa": 10.9,
+       "abs": 5.6,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147448",
@@ -3791,7 +5834,21 @@
       "ks2_mat_exp": 68.0,
       "ks2_writ_exp": 60.0,
       "ks2_fsm_pct": 60.0,
-      "sen_all_pct": 30.0
+      "sen_all_pct": 30.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-13",
+      "drivers": {
+       "pa": 23.6,
+       "abs": 7.6,
+       "susp": 3.3,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144680",
@@ -3808,7 +5865,20 @@
       "ks2_mat_exp": 63.0,
       "ks2_writ_exp": 88.0,
       "ks2_fsm_pct": 25.0,
-      "sen_all_pct": 0.0
+      "sen_all_pct": 0.0,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-12-19",
+      "drivers": {
+       "pa": 9.8,
+       "abs": 4.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "147211",
@@ -3825,7 +5895,21 @@
       "ks2_mat_exp": 58.0,
       "ks2_writ_exp": 53.0,
       "ks2_fsm_pct": 68.0,
-      "sen_all_pct": 37.0
+      "sen_all_pct": 37.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-10-24",
+      "drivers": {
+       "pa": 24.7,
+       "abs": 8.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "146312",
@@ -3842,7 +5926,21 @@
       "ks2_mat_exp": 60.0,
       "ks2_writ_exp": 66.0,
       "ks2_fsm_pct": 64.0,
-      "sen_all_pct": 14.0
+      "sen_all_pct": 14.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-04-23",
+      "drivers": {
+       "pa": 24.1,
+       "abs": 7.6,
+       "susp": 5.1,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121528",
@@ -3859,7 +5957,18 @@
       "ks2_mat_exp": 60.0,
       "ks2_writ_exp": 80.0,
       "ks2_fsm_pct": 20.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-06-27",
+      "drivers": {
+       "pa": 5.1,
+       "abs": 4.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121349",
@@ -3876,7 +5985,21 @@
       "ks2_mat_exp": 50.0,
       "ks2_writ_exp": 50.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-01-24",
+      "drivers": {
+       "pa": 21.2,
+       "abs": 6.7,
+       "susp": 2.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121373",
@@ -3893,7 +6016,21 @@
       "ks2_mat_exp": 56.0,
       "ks2_writ_exp": 67.0,
       "ks2_fsm_pct": 11.0,
-      "sen_all_pct": 11.0
+      "sen_all_pct": 11.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-11-22",
+      "drivers": {
+       "pa": 9.7,
+       "abs": 4.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121301",
@@ -3910,7 +6047,21 @@
       "ks2_mat_exp": 60.0,
       "ks2_writ_exp": 40.0,
       "ks2_fsm_pct": 50.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2024-05-01",
+      "drivers": {
+       "pa": 18.8,
+       "abs": 5.9,
+       "susp": 8.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121314",
@@ -3927,7 +6078,21 @@
       "ks2_mat_exp": 42.0,
       "ks2_writ_exp": 39.0,
       "ks2_fsm_pct": 67.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-07-25",
+      "drivers": {
+       "pa": 23.4,
+       "abs": 8.2,
+       "susp": 2.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121610",
@@ -3944,7 +6109,18 @@
       "ks2_mat_exp": 29.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 0.0,
-      "sen_all_pct": 0.0
+      "sen_all_pct": 0.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1
+      },
+      "ofsted_date": "2013-06-26",
+      "drivers": {
+       "pa": 7.9,
+       "abs": 3.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121362",
@@ -3961,7 +6137,18 @@
       "ks2_mat_exp": 48.0,
       "ks2_writ_exp": 35.0,
       "ks2_fsm_pct": 13.0,
-      "sen_all_pct": 3.0
+      "sen_all_pct": 3.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-04-30",
+      "drivers": {
+       "pa": 13.0,
+       "abs": 5.8,
+       "susp": 7.8,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121498",
@@ -3978,7 +6165,18 @@
       "ks2_mat_exp": 56.0,
       "ks2_writ_exp": 44.0,
       "ks2_fsm_pct": 22.0,
-      "sen_all_pct": 67.0
+      "sen_all_pct": 67.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-07-17",
+      "drivers": {
+       "pa": 13.3,
+       "abs": 4.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121296",
@@ -3995,7 +6193,18 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2013-12-24",
+      "drivers": {
+       "pa": 4.8,
+       "abs": 3.6,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121515",
@@ -4012,7 +6221,21 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-12",
+      "drivers": {
+       "pa": 11.4,
+       "abs": 6.1,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "121525",
@@ -4029,7 +6252,21 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2023-09-25",
+      "drivers": {
+       "pa": 7.7,
+       "abs": 6.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144274",
@@ -4046,7 +6283,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 9.0,
+       "abs": 4.3,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144678",
@@ -4063,7 +6306,20 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2025-01-13",
+      "drivers": {
+       "pa": 20.0,
+       "abs": 6.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144682",
@@ -4080,7 +6336,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 3.7,
+       "abs": 3.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "148022",
@@ -4097,7 +6359,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 17.6,
+       "abs": 7.3,
+       "susp": 12.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "149226",
@@ -4114,7 +6382,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 10.7,
+       "abs": 4.1,
+       "susp": 9.7,
+       "perm": 0.0
+      }
      },
      {
       "urn": "150395",
@@ -4131,7 +6405,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 25.5,
+       "abs": 6.5,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "150396",
@@ -4148,7 +6428,13 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "drivers": {
+       "pa": 5.4,
+       "abs": 3.9,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      }
     ]
    },
@@ -4261,6 +6547,20 @@
        "ns": 8.0,
        "unk": 3.0,
        "cohort": 234.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2024-05-17",
+      "drivers": {
+       "pa": 27.9,
+       "abs": 9.0,
+       "susp": 29.6,
+       "perm": 0.1
       }
      },
      {
@@ -4286,6 +6586,20 @@
        "ns": 10.0,
        "unk": 5.0,
        "cohort": 145.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 3,
+       "ba": 3
+      },
+      "ofsted_date": "2023-11-23",
+      "drivers": {
+       "pa": 32.9,
+       "abs": 10.2,
+       "susp": 30.1,
+       "perm": 0.2
       }
      },
      {
@@ -4311,6 +6625,20 @@
        "ns": 9.0,
        "unk": 4.0,
        "cohort": 250.0
+      },
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 3,
+       "qe": 3,
+       "pd": 2,
+       "ba": 3
+      },
+      "ofsted_date": "2022-09-21",
+      "drivers": {
+       "pa": 35.5,
+       "abs": 11.1,
+       "susp": 21.4,
+       "perm": 0.0
       }
      },
      {
@@ -4347,7 +6675,18 @@
       "ks2_mat_exp": 93.0,
       "ks2_writ_exp": 95.0,
       "ks2_fsm_pct": 31.0,
-      "sen_all_pct": 28.0
+      "sen_all_pct": 28.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1
+      },
+      "ofsted_date": "2016-11-30",
+      "drivers": {
+       "pa": 11.4,
+       "abs": 5.1,
+       "susp": 0.5,
+       "perm": 0.2
+      }
      },
      {
       "urn": "114447",
@@ -4364,7 +6703,18 @@
       "ks2_mat_exp": 91.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 41.0,
-      "sen_all_pct": 26.0
+      "sen_all_pct": 26.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2016-06-09",
+      "drivers": {
+       "pa": 8.1,
+       "abs": 4.0,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144083",
@@ -4381,7 +6731,21 @@
       "ks2_mat_exp": 82.0,
       "ks2_writ_exp": 84.0,
       "ks2_fsm_pct": 71.0,
-      "sen_all_pct": 31.0
+      "sen_all_pct": 31.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-01-19",
+      "drivers": {
+       "pa": 19.3,
+       "abs": 6.4,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "114551",
@@ -4398,7 +6762,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 78.0,
       "ks2_fsm_pct": 28.0,
-      "sen_all_pct": 19.0
+      "sen_all_pct": 19.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-09-21",
+      "drivers": {
+       "pa": 19.0,
+       "abs": 6.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141022",
@@ -4415,7 +6793,21 @@
       "ks2_mat_exp": 79.0,
       "ks2_writ_exp": 82.0,
       "ks2_fsm_pct": 23.0,
-      "sen_all_pct": 18.0
+      "sen_all_pct": 18.0,
+      "ofsted_sub": {
+       "oe": 1,
+       "lm": 1,
+       "qe": 1,
+       "pd": 1,
+       "ba": 1
+      },
+      "ofsted_date": "2023-11-23",
+      "drivers": {
+       "pa": 5.7,
+       "abs": 4.2,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "143034",
@@ -4432,7 +6824,18 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 79.0,
       "ks2_fsm_pct": 40.0,
-      "sen_all_pct": 31.0
+      "sen_all_pct": 31.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2019-01-30",
+      "drivers": {
+       "pa": 16.8,
+       "abs": 5.9,
+       "susp": 0.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "139683",
@@ -4449,7 +6852,21 @@
       "ks2_mat_exp": 80.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 88.0,
-      "sen_all_pct": 15.0
+      "sen_all_pct": 15.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-03-27",
+      "drivers": {
+       "pa": 25.1,
+       "abs": 8.3,
+       "susp": 0.4,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141655",
@@ -4466,7 +6883,18 @@
       "ks2_mat_exp": 78.0,
       "ks2_writ_exp": 71.0,
       "ks2_fsm_pct": 17.0,
-      "sen_all_pct": 20.0
+      "sen_all_pct": 20.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2018-01-31",
+      "drivers": {
+       "pa": 13.1,
+       "abs": 5.4,
+       "susp": 0.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141868",
@@ -4483,7 +6911,21 @@
       "ks2_mat_exp": 81.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 56.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2021-11-24",
+      "drivers": {
+       "pa": 16.3,
+       "abs": 6.1,
+       "susp": 1.9,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140179",
@@ -4500,7 +6942,18 @@
       "ks2_mat_exp": 72.0,
       "ks2_writ_exp": 83.0,
       "ks2_fsm_pct": 32.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 1
+      },
+      "ofsted_date": "2016-11-16",
+      "drivers": {
+       "pa": 17.6,
+       "abs": 6.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141263",
@@ -4517,7 +6970,21 @@
       "ks2_mat_exp": 76.0,
       "ks2_writ_exp": 73.0,
       "ks2_fsm_pct": 30.0,
-      "sen_all_pct": 16.0
+      "sen_all_pct": 16.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2022-05-02",
+      "drivers": {
+       "pa": 14.5,
+       "abs": 6.0,
+       "susp": 1.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141713",
@@ -4534,7 +7001,18 @@
       "ks2_mat_exp": 74.0,
       "ks2_writ_exp": 74.0,
       "ks2_fsm_pct": 36.0,
-      "sen_all_pct": 14.0
+      "sen_all_pct": 14.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2018-04-30",
+      "drivers": {
+       "pa": 18.3,
+       "abs": 6.8,
+       "susp": 0.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140493",
@@ -4551,7 +7029,21 @@
       "ks2_mat_exp": 73.0,
       "ks2_writ_exp": 63.0,
       "ks2_fsm_pct": 44.0,
-      "sen_all_pct": 25.0
+      "sen_all_pct": 25.0,
+      "ofsted_sub": {
+       "oe": 3,
+       "lm": 2,
+       "qe": 3,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2024-07-16",
+      "drivers": {
+       "pa": 24.0,
+       "abs": 7.8,
+       "susp": 2.2,
+       "perm": 0.0
+      }
      },
      {
       "urn": "114421",
@@ -4568,7 +7060,21 @@
       "ks2_mat_exp": 66.0,
       "ks2_writ_exp": 69.0,
       "ks2_fsm_pct": 24.0,
-      "sen_all_pct": 21.0
+      "sen_all_pct": 21.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 2
+      },
+      "ofsted_date": "2023-11-12",
+      "drivers": {
+       "pa": 14.9,
+       "abs": 6.0,
+       "susp": 1.6,
+       "perm": 0.0
+      }
      },
      {
       "urn": "144521",
@@ -4585,7 +7091,13 @@
       "ks2_mat_exp": 63.0,
       "ks2_writ_exp": 78.0,
       "ks2_fsm_pct": 55.0,
-      "sen_all_pct": 42.0
+      "sen_all_pct": 42.0,
+      "drivers": {
+       "pa": 18.6,
+       "abs": 6.2,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "141261",
@@ -4602,7 +7114,21 @@
       "ks2_mat_exp": 46.0,
       "ks2_writ_exp": 61.0,
       "ks2_fsm_pct": 39.0,
-      "sen_all_pct": 36.0
+      "sen_all_pct": 36.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 1,
+       "ba": 2
+      },
+      "ofsted_date": "2022-11-22",
+      "drivers": {
+       "pa": 25.4,
+       "abs": 7.4,
+       "susp": 2.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "114575",
@@ -4619,7 +7145,18 @@
       "ks2_mat_exp": 53.0,
       "ks2_writ_exp": 66.0,
       "ks2_fsm_pct": 28.0,
-      "sen_all_pct": 22.0
+      "sen_all_pct": 22.0,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2
+      },
+      "ofsted_date": "2017-12-08",
+      "drivers": {
+       "pa": 7.7,
+       "abs": 4.2,
+       "susp": 1.9,
+       "perm": 0.5
+      }
      },
      {
       "urn": "150267",
@@ -4636,7 +7173,13 @@
       "ks2_mat_exp": 47.0,
       "ks2_writ_exp": 61.0,
       "ks2_fsm_pct": 65.0,
-      "sen_all_pct": 24.0
+      "sen_all_pct": 24.0,
+      "drivers": {
+       "pa": 30.1,
+       "abs": 9.0,
+       "susp": 11.5,
+       "perm": 0.0
+      }
      },
      {
       "urn": "140311",
@@ -4653,7 +7196,21 @@
       "ks2_mat_exp": null,
       "ks2_writ_exp": null,
       "ks2_fsm_pct": null,
-      "sen_all_pct": null
+      "sen_all_pct": null,
+      "ofsted_sub": {
+       "oe": 2,
+       "lm": 2,
+       "qe": 2,
+       "pd": 2,
+       "ba": 1
+      },
+      "ofsted_date": "2019-10-17",
+      "drivers": {
+       "pa": 14.9,
+       "abs": 6.0,
+       "susp": 0.0,
+       "perm": 0.0
+      }
      },
      {
       "urn": "151251",
@@ -5122,5 +7679,793 @@
    "a8_disadv": 33.7,
    "composite": 65
   }
- ]
+ ],
+ "levers": [
+  {
+   "id": "tracking",
+   "name": "Improve tracking and ownership (no young person unknown)",
+   "phase": "Across 16-24",
+   "modelled_max_reduction_pct": 5,
+   "indicative_cost_m_yr": 35,
+   "evidence": "About 314k 16-24s are out of sight; cannot re-engage who you cannot see."
+  },
+  {
+   "id": "attendance",
+   "name": "Tackle persistent absence",
+   "phase": "11-16 flow",
+   "modelled_max_reduction_pct": 9,
+   "indicative_cost_m_yr": 110,
+   "evidence": "Persistent absence KS4 is 2nd-strongest NEET risk factor (+10ppt)."
+  },
+  {
+   "id": "screen",
+   "name": "Mandatory Year 7 risk screening + mentoring",
+   "phase": "11-16 flow",
+   "modelled_max_reduction_pct": 6,
+   "indicative_cost_m_yr": 40,
+   "evidence": "Targets EHC plan (+16-20ppt) and absence; near-zero data cost."
+  },
+  {
+   "id": "workex",
+   "name": "Work-experience entitlement (4+ employer contacts)",
+   "phase": "11-16 to 16-18",
+   "modelled_max_reduction_pct": 12,
+   "indicative_cost_m_yr": 90,
+   "evidence": "4+ employer contacts: 5x less likely NEET; ~\u00a360 placement for ~\u00a3150 benefit."
+  },
+  {
+   "id": "apprent",
+   "name": "Tilt apprenticeships to young people",
+   "phase": "16-18 and 18-24",
+   "modelled_max_reduction_pct": 10,
+   "indicative_cost_m_yr": 280,
+   "evidence": "Best youth intervention (10 in work per 100); ~\u00a315 back per \u00a31 (L2, 19-23)."
+  },
+  {
+   "id": "resit",
+   "name": "Reform post-16 maths/English resit",
+   "phase": "16-18",
+   "modelled_max_reduction_pct": 4,
+   "indicative_cost_m_yr": 35,
+   "evidence": "Only ~a third improve on resit; repeated failure is a NEET pathway."
+  },
+  {
+   "id": "vocational",
+   "name": "High-quality vocational pathways at KS4",
+   "phase": "11-16 to 16-18",
+   "modelled_max_reduction_pct": 5,
+   "indicative_cost_m_yr": 130,
+   "evidence": "Tech awards: 23% lower unauthorised absence; absence drives NEET."
+  },
+  {
+   "id": "admissions",
+   "name": "Open up admissions to the best schools",
+   "phase": "16-18",
+   "modelled_max_reduction_pct": 3,
+   "indicative_cost_m_yr": 25,
+   "evidence": "Selective schools 0.85% no sustained destination vs 5.54% non-selective."
+  }
+ ],
+ "leversNote": "Modelled maximum reduction in the national 16-24 NEET count at full rollout, with indicative national annual cost (\u00a3m). Ready to Work sprint modelling, July 2026. Mission-area pilots would be a small fraction of the national cost.",
+ "evidence": {
+  "source": "Ready to Work sprint evidence pack (July 2026). Each item carries its original DfE/ONS/OECD/research source.",
+  "riskFactors": {
+   "17-19": [
+    {
+     "f": "Has an EHC plan",
+     "ppt": 16
+    },
+    {
+     "f": "Persistently absent in KS4",
+     "ppt": 10
+    },
+    {
+     "f": "Low GCSE attainment",
+     "ppt": 7
+    },
+    {
+     "f": "Persistently absent in KS3",
+     "ppt": 7
+    },
+    {
+     "f": "Low engagement",
+     "ppt": 6
+    },
+    {
+     "f": "Parent has no qualifications",
+     "ppt": 6
+    },
+    {
+     "f": "Social services contact",
+     "ppt": 5
+    },
+    {
+     "f": "Parent has a disability",
+     "ppt": 5
+    },
+    {
+     "f": "No leisure activities",
+     "ppt": 4
+    }
+   ],
+   "20-24": [
+    {
+     "f": "Has an EHC plan",
+     "ppt": 20
+    },
+    {
+     "f": "No leisure activities",
+     "ppt": 10
+    },
+    {
+     "f": "Has SEN",
+     "ppt": 8
+    },
+    {
+     "f": "Persistently absent in KS4",
+     "ppt": 7
+    },
+    {
+     "f": "Parent has no qualifications",
+     "ppt": 7
+    },
+    {
+     "f": "Low GCSE attainment",
+     "ppt": 5
+    }
+   ]
+  },
+  "phaseCards": [
+   {
+    "phase": "Prepare",
+    "ages": "11-16",
+    "blurb": "Risk is set in school. The strongest predictors of becoming NEET are need and absence, and the foundations of engagement, including vocational tasters and employer contact, are laid here.",
+    "cards": [
+     {
+      "stat": "23%",
+      "label": "lower unauthorised absence for pupils who take at least one tech award, yet 16% of schools do not offer them and 59% of employers do not understand them",
+      "source": "DfE / Ofqual (2019, 2025)"
+     },
+     {
+      "stat": "5x",
+      "label": "less likely to be NEET for pupils who recall four or more employer contacts at school, controlling for qualifications and background",
+      "source": "Education and Employers (2014); CEC (2021)"
+     },
+     {
+      "stat": "\u00a360 \u2192 \u00a3150",
+      "label": "cost versus net benefit per work placement: good value, but it is repeated employer contact that lowers NEET risk",
+      "source": "Social Market Foundation (2023)"
+     },
+     {
+      "stat": "62% vs 93%",
+      "label": "sustained destination one year after KS4 for alternative provision versus mainstream pupils",
+      "source": "DfE, Longer term destinations (2026)"
+     }
+    ]
+   },
+   {
+    "phase": "Transition",
+    "ages": "16-18",
+    "blurb": "The handover from school to college and work. Funding rules, a thin apprenticeship offer and a long tail of weak providers leave too many without a sustained destination.",
+    "cards": [
+     {
+      "stat": "No ringfence",
+      "label": "the 16-19 funding formula uses lagged data and does not fully reimburse in-year growth, with no ringfenced NEET re-engagement funding",
+      "source": "DfE, 16 to 19 funding (2026)"
+     },
+     {
+      "stat": "\u00a37,860 vs \u00a36,595",
+      "label": "spend per student in 16-18 colleges versus school sixth forms; yet the median FE teacher earns \u00a310,400 less than a secondary teacher",
+      "source": "IFS / NFER (2026)"
+     },
+     {
+      "stat": "Halved",
+      "label": "the 16-17 employment rate has more than halved since the 1990s",
+      "source": "ONS, Labour Force Survey (2026)"
+     },
+     {
+      "stat": "-40%",
+      "label": "under-19 apprenticeship starts are near a historic low, about 40% below their early-2010s peak",
+      "source": "DfE, Apprenticeships (2026)"
+     },
+     {
+      "stat": "80%",
+      "label": "sustained destination rate for the 16-18 Level 3 cohort from FE colleges, the lowest of any setting, against 88% for mainstream schools",
+      "source": "DfE, 16-18 destination measures (2026)"
+     }
+    ]
+   },
+   {
+    "phase": "Deliver",
+    "ages": "18-24",
+    "blurb": "Turning participation into work. Apprenticeships have the strongest returns of any youth employment route, but starts have collapsed and university returns are uneven.",
+    "cards": [
+     {
+      "stat": "15%",
+      "label": "of 18-year-olds are NEET; 34% are in higher education and 20% in work without education or training",
+      "source": "DfE, Participation 16-18 (2025)"
+     },
+     {
+      "stat": "10 per 100",
+      "label": "extra young people in work for every 100 supported through apprenticeships, the most effective youth employment intervention (wage subsidies: 3)",
+      "source": "Youth Futures Foundation (2026)"
+     },
+     {
+      "stat": "\u00a315 per \u00a31",
+      "label": "return on a Level 2 apprenticeship for 19-23 year olds; youth apprenticeships cost about \u00a311k each",
+      "source": "IfATE / ESFA (2020); DfE (2025)"
+     },
+     {
+      "stat": "+7-8 ppt",
+      "label": "more likely to be continuously employed at 25 for Level 3 apprenticeship completers than similar peers with a Level 2 qualification",
+      "source": "CVER (2017); Sheffield (2022)"
+     },
+     {
+      "stat": "20% / 30%",
+      "label": "of women and men respectively are financially worse off for going to university, with returns varying hugely by subject",
+      "source": "IFS (2026)"
+     }
+    ]
+   }
+  ],
+  "wwc": {
+   "source": "Independent Inquiry into White Working Class Educational Outcomes (June 2026). Commissioned by Star Academies, funded by the Christopher and Henry Oldfield Trust, authored by Public First. Co-chairs: Sir Hamid Patel CBE and Baroness Estelle Morris.",
+   "year": "June 2026",
+   "headline": {
+    "pupils_total_m": 8.45,
+    "fsm_m": 2.17,
+    "white_british_fsm_m": 1.25,
+    "share_of_school_pop_pct": 15,
+    "ks4_basics_wbfsm": 36,
+    "ks4_basics_nonfsm": 72,
+    "progress8_wbfsm": -0.9
+   },
+   "attainmentGap": [
+    {
+     "stage": "Phonics (Year 1)",
+     "wbfsm": 63,
+     "nonfsm": 83
+    },
+    {
+     "stage": "KS2 reading, writing & maths",
+     "wbfsm": 43,
+     "nonfsm": 69
+    },
+    {
+     "stage": "KS4 grade 4+ English & maths",
+     "wbfsm": 36,
+     "nonfsm": 72
+    }
+   ],
+   "engagement": [
+    {
+     "label": "Believe university is important for getting a good job",
+     "value": 22,
+     "frame": "only"
+    },
+    {
+     "label": "Think getting good grades is part of being successful",
+     "value": 43,
+     "frame": "only"
+    },
+    {
+     "label": "Rarely or never enjoy lessons",
+     "value": 27,
+     "frame": "neg"
+    },
+    {
+     "label": "Parents say their child's mental health is getting worse",
+     "value": 55,
+     "frame": "neg"
+    },
+    {
+     "label": "Do not reach a good level of development by end of Reception",
+     "value": 52,
+     "frame": "neg"
+    },
+    {
+     "label": "Parents: not enough local opportunities for their child to succeed",
+     "value": 52,
+     "frame": "neg"
+    }
+   ],
+   "recommendations": {
+    "Secondary education": [
+     "Develop high-quality vocational and applied pathways at Key Stage 4",
+     "Ensure every young person leaves with a clear destination and is prepared for the transition",
+     "Widen access to the highest-performing schools",
+     "Reprioritise Key Stage 3 and strengthen Key Stage 4 curriculum delivery",
+     "Improve careers education and make learning feel more relevant"
+    ],
+    "Tertiary education": [
+     "Massively expand apprenticeship opportunities in white working class communities",
+     "Empower FE colleges as high-quality local engines of progression",
+     "Reduce the financial risks of further and higher study; free local transport for under-21s"
+    ],
+    "Early & primary": [
+     "Build a stronger network of Best Start Family Hubs",
+     "Extend 30 hours' free childcare to all disadvantaged families",
+     "Make reading fluency a national priority"
+    ],
+    "Across the system": [
+     "Define and prioritise white working class outcomes",
+     "A more inclusive approach to SEND and additional needs",
+     "A stronger response to mental health and excessive screen use",
+     "A properly funded enrichment entitlement"
+    ]
+   },
+   "lines": [
+    "Disadvantaged white British pupils experience some of the weakest educational outcomes in the country across all stages of education.",
+    "Nearly two thirds of white British FSM pupils finish compulsory education without the minimum qualifications needed to access most further education and employment.",
+    "Disadvantage, disengagement and unequal access to opportunity accumulate across childhood and adolescence.",
+    "The Inquiry rejects the idea that underachievement amongst white working class pupils is inevitable.",
+    "No child in England should grow up feeling that education is for other people, but not for them."
+   ]
+  }
+ },
+ "kpis": {
+  "outcome": [
+   {
+    "kpi": "Persistent absence rate",
+    "baseline": "Mission area average (to be baselined)",
+    "y1": "2pp reduction from baseline",
+    "y3": "5pp reduction; within 2pp of national avg"
+   },
+   {
+    "kpi": "Enrichment participation (2+ activities/week)",
+    "baseline": "To be baselined via initial audit",
+    "y1": "50% of disadvantaged pupils",
+    "y3": "80% of disadvantaged pupils"
+   },
+   {
+    "kpi": "Social and emotional wellbeing (SDQ/PASS score)",
+    "baseline": "Baseline assessment on entry to Impact Programme",
+    "y1": "60% of Link Worker cohort move out of risk",
+    "y3": "75% move out of risk (matching AllChild benchmark)"
+   },
+   {
+    "kpi": "KS4 Attainment 8 (disadvantaged)",
+    "baseline": "NE: 33.7 / Hastings: 26.0 / Scarborough: 26.6",
+    "y1": "Narrow gap to national by 0.5 pts",
+    "y3": "Narrow gap to national by 2.0 pts"
+   },
+   {
+    "kpi": "Year 6\u20137 transition retention",
+    "baseline": "% pupils maintaining attendance through transition",
+    "y1": "90% retention rate through transition",
+    "y3": "95% retention rate"
+   },
+   {
+    "kpi": "Suspensions and permanent exclusions",
+    "baseline": "Mission area rates (to be baselined)",
+    "y1": "15% reduction from baseline",
+    "y3": "30% reduction; below national average"
+   },
+   {
+    "kpi": "Post-16 NEET rate",
+    "baseline": "Mission area rates (DfE destinations data)",
+    "y1": "1pp reduction from baseline",
+    "y3": "3pp reduction; within 1pp of national avg"
+   }
+  ],
+  "collective": [
+   {
+    "kpi": "Number of active delivery partners in collective",
+    "measurement": "Partner register maintained by backbone",
+    "y3": "20+ organisations per mission area"
+   },
+   {
+    "kpi": "Parental engagement rate",
+    "measurement": "% of parents engaging with at least one programme element per term",
+    "y3": "60% of targeted families"
+   },
+   {
+    "kpi": "Enrichment provider density",
+    "measurement": "Number of structured enrichment opportunities per pupil per week",
+    "y3": "3+ accessible options per pupil"
+   },
+   {
+    "kpi": "Multi-agency case resolution time",
+    "measurement": "Average days from referral to coordinated multi-agency response",
+    "y3": "Under 10 working days"
+   },
+   {
+    "kpi": "Community belonging index",
+    "measurement": "Annual survey of pupils, parents and staff",
+    "y3": "Positive trend from baseline"
+   }
+  ],
+  "sustainability": [
+   {
+    "kpi": "Philanthropic match funding secured",
+    "measurement": "Total non-DfE investment mobilised",
+    "y3": "\u00a34m+ cumulative (matching DfE at 1:1)"
+   },
+   {
+    "kpi": "Evidence base strength",
+    "measurement": "Number of TLG evaluations completed; at least one micro-RCT published",
+    "y3": "3+ evaluations; 1 RCT"
+   },
+   {
+    "kpi": "Policy adoption",
+    "measurement": "Mission learning adopted in national policy (Enrichment Framework, attendance guidance, etc.)",
+    "y3": "At least 2 policy recommendations adopted"
+   },
+   {
+    "kpi": "Local sustainability plan",
+    "measurement": "Written plan for continued delivery after DfE funding period",
+    "y3": "Plan in place by end of Year 2"
+   }
+  ],
+  "framework": [
+   {
+    "metric": "Attainment 8 score",
+    "what": "Average GCSE point score across 8 subjects",
+    "source": "DfE school performance tables",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "Progress 8 score",
+    "what": "Contextualised progress from KS2 baseline",
+    "source": "DfE school performance tables",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "Basics 4+/5+ (Eng & Maths)",
+    "what": "% achieving grade 4 and 5 in English and maths",
+    "source": "DfE performance tables",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "KS2 RWM combined",
+    "what": "% reaching expected standard in reading, writing, maths",
+    "source": "DfE / Explore Education Statistics",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "Phonics screening pass rate",
+    "what": "% of Year 1 pupils passing phonics check",
+    "source": "DfE / Explore Education Statistics",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "Disadvantaged attainment gap",
+    "what": "FSM vs non-FSM Attainment 8 / KS2 gap",
+    "source": "DfE performance tables (FSM sub-group)",
+    "dimension": "Both",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "A-level / 16-19 outcomes",
+    "what": "Average point score per entry; progression to HE",
+    "source": "DfE 16-19 performance tables",
+    "dimension": "Both",
+    "frequency": "Annual",
+    "category": "Attainment & Academic Progress"
+   },
+   {
+    "metric": "Overall absence rate",
+    "what": "% of possible sessions missed",
+    "source": "DfE attendance data / EES",
+    "dimension": "In-school",
+    "frequency": "Termly / annual",
+    "category": "Attendance & Engagement"
+   },
+   {
+    "metric": "Persistent absence rate (PA)",
+    "what": "% of pupils missing 10%+ of sessions",
+    "source": "DfE attendance data / EES",
+    "dimension": "Both",
+    "frequency": "Termly / annual",
+    "category": "Attendance & Engagement"
+   },
+   {
+    "metric": "Exclusion rate (fixed/permanent)",
+    "what": "Rate of suspensions and permanent exclusions per 100 pupils",
+    "source": "DfE exclusions statistics",
+    "dimension": "Both",
+    "frequency": "Annual",
+    "category": "Attendance & Engagement"
+   },
+   {
+    "metric": "EHCP prevalence rate",
+    "what": "% of pupils with Education, Health and Care Plans",
+    "source": "DfE SEN statistics",
+    "dimension": "Both",
+    "frequency": "Annual (Jan census)",
+    "category": "SEND & Inclusion"
+   },
+   {
+    "metric": "SEN support attainment gap",
+    "what": "Progress 8 / KS2 gap for SEN support cohort vs non-SEND",
+    "source": "DfE performance tables (SEN sub-group)",
+    "dimension": "In-school",
+    "frequency": "Annual",
+    "category": "SEND & Inclusion"
+   },
+   {
+    "metric": "EHCP wait times",
+    "what": "% of EHCPs issued within 20 weeks",
+    "source": "DfE SEN2 data / local authority returns",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "SEND & Inclusion"
+   },
+   {
+    "metric": "Alternative provision placements",
+    "what": "Rate of pupils placed in AP per 1,000",
+    "source": "DfE AP census / LA data",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "SEND & Inclusion"
+   },
+   {
+    "metric": "NEET rate (16-18)",
+    "what": "% not in education, employment or training post-16",
+    "source": "DfE NEET statistics / LLDD",
+    "dimension": "Place",
+    "frequency": "Annual / quarterly",
+    "category": "Destinations & NEET"
+   },
+   {
+    "metric": "Sustained education destinations",
+    "what": "% in sustained education 6 months post-KS4",
+    "source": "DfE destinations data",
+    "dimension": "Both",
+    "frequency": "Annual",
+    "category": "Destinations & NEET"
+   },
+   {
+    "metric": "Higher education entry rate",
+    "what": "% progressing to university; POLAR quintile breakdown",
+    "source": "UCAS / DfE HE destinations",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Destinations & NEET"
+   },
+   {
+    "metric": "Teacher vacancy rate",
+    "what": "% of teaching posts vacant at census date",
+    "source": "DfE School Workforce Census",
+    "dimension": "Both",
+    "frequency": "Annual (Nov)",
+    "category": "Workforce & System Capacity"
+   },
+   {
+    "metric": "Teacher retention rate",
+    "what": "% of qualified teachers remaining in service 1 year on",
+    "source": "DfE School Workforce Census",
+    "dimension": "Both",
+    "frequency": "Annual",
+    "category": "Workforce & System Capacity"
+   },
+   {
+    "metric": "ITT recruitment fill rate",
+    "what": "% of postgraduate ITT targets filled by subject",
+    "source": "DfE ITT census / NCTL data",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Workforce & System Capacity"
+   },
+   {
+    "metric": "Headteacher vacancy / interim rate",
+    "what": "% of schools without substantive headteacher",
+    "source": "DfE School Workforce Census",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Workforce & System Capacity"
+   },
+   {
+    "metric": "Child poverty rate",
+    "what": "% of children in families below 60% median income (after housing)",
+    "source": "HMRC / DWP / End Child Poverty coalition",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Place: Economic & Social Context"
+   },
+   {
+    "metric": "Free school meals eligibility",
+    "what": "% of pupils eligible for FSM (ever-6 for performance)",
+    "source": "DfE school census / EES",
+    "dimension": "Both",
+    "frequency": "Annual (Jan census)",
+    "category": "Place: Economic & Social Context"
+   },
+   {
+    "metric": "IMD / IDACI decile",
+    "what": "Index of Multiple Deprivation; Income Deprivation Affecting Children",
+    "source": "MHCLG / ONS (2019 / 2024 update)",
+    "dimension": "Place",
+    "frequency": "Every ~5 years",
+    "category": "Place: Economic & Social Context"
+   },
+   {
+    "metric": "Youth unemployment rate",
+    "what": "% of 16-24 year olds unemployed in LCA/MSOA",
+    "source": "ONS Labour Force Survey / NOMIS",
+    "dimension": "Place",
+    "frequency": "Annual / quarterly",
+    "category": "Place: Economic & Social Context"
+   },
+   {
+    "metric": "Child obesity rate",
+    "what": "% of Year 6 pupils classified obese (NCMP)",
+    "source": "NHS / OHID National Child Measurement Programme",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Place: Health & Welfare"
+   },
+   {
+    "metric": "Children in need / looked-after",
+    "what": "CiN rate per 10,000; LAC rate per 10,000",
+    "source": "DfE CiN / SSDA903 returns",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Place: Health & Welfare"
+   },
+   {
+    "metric": "Child mental health referral rate",
+    "what": "CAMHS referrals per 1,000; average wait to treatment",
+    "source": "NHS England / ICB CAMHS data",
+    "dimension": "Place",
+    "frequency": "Quarterly",
+    "category": "Place: Health & Welfare"
+   },
+   {
+    "metric": "Healthy life expectancy at birth",
+    "what": "Expected years in good health; local vs England average gap",
+    "source": "ONS / OHID Public Health Profiles",
+    "dimension": "Place",
+    "frequency": "Every 2-3 years",
+    "category": "Place: Health & Welfare"
+   },
+   {
+    "metric": "Infant mortality rate",
+    "what": "Deaths under 1 year per 1,000 live births",
+    "source": "ONS vital statistics / OHID",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Place: Health & Welfare"
+   },
+   {
+    "metric": "Seasonal employment volatility",
+    "what": "Monthly claimant count variation; peak/trough delta",
+    "source": "ONS / NOMIS claimant count data",
+    "dimension": "Place",
+    "frequency": "Monthly",
+    "category": "Place: Coastal-Specific (Mission Coastal)"
+   },
+   {
+    "metric": "Population churn / out-migration",
+    "what": "Net internal migration rate of working-age adults",
+    "source": "ONS population estimates / NHSCR data",
+    "dimension": "Place",
+    "frequency": "Annual",
+    "category": "Place: Coastal-Specific (Mission Coastal)"
+   },
+   {
+    "metric": "School roll sustainability",
+    "what": "% of schools with falling rolls; surplus places rate",
+    "source": "DfE SCAP / School capacity survey",
+    "dimension": "Place",
+    "frequency": "Annual (SCAP)",
+    "category": "Place: Coastal-Specific (Mission Coastal)"
+   }
+  ],
+  "note": "Outcome / collective-impact / sustainability KPIs from the Strand 2 collective impact strategy (May 2026); metrics framework from the Mission Metrics doc."
+ },
+ "strand2Risks": [
+  {
+   "risk": "Partner fatigue / collaboration overload",
+   "rating": "HIGH",
+   "impact": "Schools and LAs already face multiple demands; collective working adds coordination burden.",
+   "mitigation": "Backbone organisations absorb coordination cost. Streamlined governance with clear decision rights. \u2018No meeting without purpose\u2019 principle."
+  },
+  {
+   "risk": "Enrichment provider supply in \u2018enrichment deserts\u2019",
+   "rating": "HIGH",
+   "impact": "Insufficient local organisations to deliver the enrichment entitlement.",
+   "mitigation": "Impetus capacity-building role: identify, fund and strengthen local providers. National partners (Sport England, Arts Council) deploy mobile/outreach provision. Digital enrichment as supplement."
+  },
+  {
+   "risk": "Link Worker recruitment and retention",
+   "rating": "MEDIUM",
+   "impact": "Difficulty recruiting skilled Link Workers in deprived coastal/northern areas.",
+   "mitigation": "Competitive pay scales benchmarked to local market. AllChild training and career development pathway. University placement partnerships."
+  },
+  {
+   "risk": "Data sharing between partners",
+   "rating": "MEDIUM",
+   "impact": "GDPR and institutional caution inhibit the shared measurement system.",
+   "mitigation": "Data sharing agreements established in Phase 1 as condition of Charter. DfE legal team support. Pseudonymised data where pupil-level sharing is not possible."
+  },
+  {
+   "risk": "Political and funding continuity",
+   "rating": "MEDIUM",
+   "impact": "Change of Ministers or Spending Review decisions could defund the missions.",
+   "mitigation": "Build cross-party support through early evidence publication. Sustainability plan from Year 2. Philanthropic match funding provides buffer."
+  }
+ ],
+ "partners": [
+  {
+   "partner": "Right to Succeed",
+   "role": "Backbone organisation and collective impact coordinator",
+   "ne": "Primary backbone for South Tyneside & Sunderland. Leads community engagement, shared measurement, partner convening.??",
+   "coastal": "Advisory role, supporting backbone methodology transfer to Scarborough."
+  },
+  {
+   "partner": "AllChild",
+   "role": "Link Worker deployment, Impact Programme delivery, outcomes-based funding model",
+   "ne": "Link Worker deployment in mission schools. Training and QA of pastoral support model.",
+   "coastal": "Primary backbone for Hastings (building on \u00a33m programme launching September 2026). Link Workers in six schools expanding to full coverage."
+  },
+  {
+   "partner": "Impetus",
+   "role": "Capacity builder, impact funder, evidence partner",
+   "ne": "Identifying and strengthening best local delivery organisations. Funding due diligence on enrichment providers. Policy insight and coalition building.",
+   "coastal": "Same capacity-building role. Connect Fund and Engage Fund alignment for mission organisations."
+  },
+  {
+   "partner": "DfE",
+   "role": "Strategic oversight, policy alignment, core funding",
+   "ne": "\u00a34.2m annual allocation (shared across all four strands). Enrichment Framework and Pupil Engagement Framework alignment.",
+   "coastal": "Same. DCMS \u00a322.5m enrichment funding coordination. Cabinet Office TLG team alignment."
+  },
+  {
+   "partner": "Local Authorities",
+   "role": "Statutory duties, local intelligence, service integration",
+   "ne": "South Tyneside and Sunderland Councils: attendance, social care, early years, housing, SEND.",
+   "coastal": "East Sussex CC (Hastings) and North Yorkshire Council (Scarborough): same statutory integration."
+  }
+ ],
+ "enrichmentBenchmarks": [
+  {
+   "benchmark": "1. Developing a stable and integrated enrichment programme",
+   "summary": "Every school should have an embedded programme of enrichment activities that is known and understood by pupils, parents and carers, staff, governors, external providers and the wider local community. \u200b"
+  },
+  {
+   "benchmark": "2. Sustaining a broad and balanced enrichment programme\u200b",
+   "summary": "Every pupil should have multiple and varied opportunities to engage in purposeful enrichment activities that are fun\u00a0and can support a thriving childhood and successful transition to adulthood, including through supporting wellbeing and social skills."
+  },
+  {
+   "benchmark": "3. Linking enrichment with wider priorities\u200b",
+   "summary": "Every school should align its enrichment programme with its broader priorities, for instance around attainment, attendance, behaviour, careers, curriculum, personal development and wellbeing."
+  },
+  {
+   "benchmark": "4. Responding to the interests, passions and leadership potential of every pupil, and of staff\u200b",
+   "summary": "The enrichment programme should be created with involvement from the whole school community and the wider locality, with a particular focus on pupils\u2019 voice and choice.\u200b"
+  },
+  {
+   "benchmark": "5. Targeting and meeting the needs of pupils at risk of missing out\u200b",
+   "summary": "Opportunities and access points should be tailored to the needs of every pupil, including any additional needs of vulnerable and disadvantaged pupils, young people with SEND, young carers and those who are absent.\u200b"
+  },
+  {
+   "benchmark": "6. Building partnerships and collaborations",
+   "summary": "Every child and young person should have opportunities to experience enrichment activities led by high-quality external providers, in addition to opportunities led within the school.\u200b"
+  },
+  {
+   "benchmark": "7. Agreeing and sharing outcomes\u00a0\u200bOR Impact and recognition",
+   "summary": "Every school should reflect on the key pupil-level outcomes their enrichment programme aims to develop and acknowledge and celebrate participation and achievement in enrichment."
+  },
+  {
+   "benchmark": "8. Continuously improving quality and impact\u200b",
+   "summary": "Every school should put consistent mechanisms in place to understand and improve the quality and impact of any enrichment activity they provide. \u200b"
+  }
+ ],
+ "docDigests": {
+  "whitePaper": "Every Child Achieving and Thriving (Feb 2026): ten-year plan; targets national average A8 of 50 by end of decade and halving the disadvantage gap within a generation. Three shifts: narrow\u2192broad (knowledge-rich curriculum + guaranteed enrichment), plus inclusion/SEND (\u00a33.7bn specialist capital, disadvantage funding moving beyond FSM) and phased delivery 2025-28 (align to best practice \u2192 prepare for reform \u2192 deliver). Enrichment Framework + Ofsted benchmarks from autumn; new KS3 alliance for primary-secondary transition.",
+  "inclusionFramework": "National Inclusion Framework (internal direction paper): minimum National Inclusion Standards for every school by 2028, \u00a315m evidence base via independent expert panel. Framed as a floor not a ceiling; key design risk is compliance-driven floor standards. Mission Inclusion Labs generate the delivery evidence this framework needs.",
+  "enrichmentBenchmarksNote": "Eight School Enrichment Benchmarks (Sept 2025) \u2014 the national framework the mission enrichment entitlement aligns to."
+ }
 }
