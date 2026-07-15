@@ -32,17 +32,18 @@ Return ONLY a JSON code fence:
 \`\`\`json
 {"objectives":[{"title":"...","detail":"one or two sentences: the measurable goal, the baseline figure from the data, and the target logic","evidence":"the key figures from the dataset that justify it","area":"all|sunderland|south-tyneside|scarborough|hastings"}]}
 \`\`\`
-Give 4 to 6 objectives, each anchored to at least one real figure from the dataset.` + RULES + DATA;
+Give 4 to 5 objectives, each anchored to at least one real figure from the dataset. Keep "detail" and "evidence" to one sentence each — you are running inside a strict 10-second window.` + RULES + DATA;
 
 const SYSTEM_PLAN = `You are a delivery strategist for Mission Control. The user gives you a VMOST objective. Propose strategies and nested tactics for it, consistent with the mission design (four strands, PSTs, efficacy engine, TLG concepts, £4.2m envelope) and grounded in the dataset.
 Return ONLY a JSON code fence:
 \`\`\`json
 {"strategies":[{"title":"...","detail":"how resources are directed and why, citing dataset figures","tactics":[{"title":"...","detail":"concrete day-to-day action, who does it, in which schools/areas where the data points there"}]}]}
 \`\`\`
-Give 2 to 3 strategies with 2 to 4 tactics each. Reference specific schools, areas or figures from the dataset where relevant.` + RULES + DATA;
+Give 2 to 3 strategies with 2 to 3 tactics each. Reference specific schools, areas or figures from the dataset where relevant. Keep every "detail" to one sentence — you are running inside a strict 10-second window.` + RULES + DATA;
 
 const SYSTEM_IMPACT = `You are the evaluation lead for Mission Control. The user gives you a VMOST plan (objectives, strategies, tactics) and possibly simulator settings. Model the intended impact honestly: direction of travel, plausible scale ranges based on the baselines in the dataset, key assumptions, and what would need to be true. Be candid about uncertainty; these are illustrative scenarios, not forecasts.
-Open with a stat strip of the relevant baselines, then for each objective a bold title line, 2-3 lines of expected impact logic, and a chart contrasting baseline with an illustrative trajectory where the data allows. Close with the two biggest risks to delivery.` + RULES + VISUAL + DATA;
+Open with a stat strip of the relevant baselines, then for each objective a bold title line and 2-3 lines of expected impact logic, with at most one chart overall. Close with the two biggest risks to delivery.
+BE BRIEF: the whole answer must stay under 300 words of prose (plus blocks) — you are running inside a strict 10-second window.` + RULES + VISUAL + DATA;
 
 exports.handler = async (event) => {
   const KEY = process.env.ANTHROPIC_API_KEY || process.env.VITE_ANTHROPIC_KEY || process.env.ANTHROPIC_KEY;
@@ -65,7 +66,8 @@ exports.handler = async (event) => {
   if (!KEY) return json(200, { answer: null, error: 'no_key' });
 
   const system = mode === 'objectives' ? SYSTEM_OBJECTIVES : mode === 'plan' ? SYSTEM_PLAN : mode === 'impact' ? SYSTEM_IMPACT : SYSTEM_ASK;
-  const maxTokens = mode === 'ask' ? 900 : 1600;
+  // Netlify synchronous functions time out at ~10s, so keep responses tight.
+  const maxTokens = mode === 'ask' ? 800 : mode === 'impact' ? 900 : 1200;
   const userMsg = (context ? `CONTEXT:\n${context}\n\n` : '') + (question || 'Suggest objectives.');
 
   const candidates = process.env.ASK_MODEL

@@ -19,13 +19,20 @@ export function useData() {
   return useContext(DataCtx);
 }
 
-export async function askApi(payload) {
+export async function askApi(payload, attempt = 0) {
   const r = await fetch('/api/ask', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(payload),
   });
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  if (!r.ok) {
+    // 502/504 = the function hit Netlify's ~10s limit before Claude finished. Retry once.
+    if ((r.status === 504 || r.status === 502) && attempt < 1) return askApi(payload, attempt + 1);
+    if (r.status === 504 || r.status === 502) {
+      throw new Error('The answer took longer than the 10-second function window. Try again — it usually succeeds on a retry — or simplify the plan/scenario being assessed.');
+    }
+    throw new Error(`HTTP ${r.status}`);
+  }
   return r.json();
 }
 

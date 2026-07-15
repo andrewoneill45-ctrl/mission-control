@@ -30,13 +30,31 @@ function MissionMenu({ id, label, coastal, areas }) {
   );
 }
 
+function Logo({ size = 32 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="mc-g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#0f9d8a" />
+          <stop offset="1" stopColor="#2f6fdb" />
+        </linearGradient>
+      </defs>
+      <rect width="32" height="32" rx="9" fill="url(#mc-g)" />
+      <circle cx="16" cy="16" r="6.5" stroke="#fff" strokeWidth="1.6" opacity="0.9" />
+      <circle cx="16" cy="16" r="2.1" fill="#fff" />
+      <path d="M4.5 21.5 C 9 26.5, 23 26.5, 27.5 21.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" opacity="0.55" fill="none" />
+      <circle cx="25.1" cy="8.2" r="1.9" fill="#fff" />
+    </svg>
+  );
+}
+
 function Nav() {
   const link = ({ isActive }) => 'navlink' + (isActive ? ' active' : '');
   return (
     <header className="topbar">
       <div className="topbar-inner">
         <NavLink to="/" className="brand">
-          <div className="dot">🛰️</div>
+          <Logo />
           <h1>Mission Control<small>NE &amp; Coastal</small></h1>
         </NavLink>
         <NavLink to="/" end className={link}>Overview</NavLink>
