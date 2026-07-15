@@ -1,0 +1,625 @@
+{
+ "nodes": [
+  {
+   "id": "vision",
+   "label": "Vision: Every child achieving & thriving",
+   "kind": "vmost",
+   "text": "Every child achieving and thriving \u2014 a country where the place a child grows up, from the North East to the coast, no longer sets a ceiling on how far they go."
+  },
+  {
+   "id": "mission-ne",
+   "label": "Mission North East",
+   "kind": "mission",
+   "text": "Region-wide mission; phase 1 clusters in Sunderland and South Tyneside; phase 2 candidates Darlington and Middlesbrough."
+  },
+  {
+   "id": "mission-coastal",
+   "label": "Mission Coastal",
+   "kind": "mission",
+   "text": "Coastal mission; areas chosen by Ministers from a data-led shortlist: Scarborough (north) and Hastings (south)."
+  },
+  {
+   "id": "sunderland",
+   "label": "Sunderland",
+   "kind": "area",
+   "text": "Phase 1 Mission NE cluster. Sustained below-average KS4 attainment, among the highest disadvantaged underperformance in the region, elevated persistent absence, high deprivation (53rd most deprived nationally on IDACI), and no existing targeted DfE support (RISE) \u2014 genuine additionality."
+  },
+  {
+   "id": "south-tyneside",
+   "label": "South Tyneside",
+   "kind": "area",
+   "text": "Phase 1 Mission NE cluster. A8 of 42.7 vs NE average 44.1 and national 46.0; disadvantaged A8 33.1, nearly two points below the national average; elevated persistent absence; 48th most deprived nationally on IDACI; not covered by RISE or other targeted programmes."
+  },
+  {
+   "id": "scarborough",
+   "label": "Scarborough",
+   "kind": "area",
+   "text": "Mission Coastal (north). Chosen by Ministers from a data-led shortlist of coastal LADs. Disadvantaged A8 of 26.6 is among the weakest nationally. KS2 is notably weak: over half of primaries below national average, so the mission includes a strong primary attainment focus. Strong trusts (e.g. Delta) have recently taken on weak secondaries but pupil engagement remains the core challenge. Former Opportunity Area and Priority Education Investment Area."
+  },
+  {
+   "id": "hastings",
+   "label": "Hastings",
+   "kind": "area",
+   "text": "Mission Coastal (south). Disadvantaged A8 of 26.0 \u2014 the lowest of any coastal area in England for three years running. Defining challenge is churn: high pupil mobility driven by housing insecurity, plus a very large elective home education cohort (~10% of secondary-age pupils). Former Opportunity Area and PEIA."
+  },
+  {
+   "id": "strand-1",
+   "label": "Strand 1: Intensive School Improvement",
+   "kind": "strand",
+   "text": "Performance Support Teams of experienced leaders and specialists from high-performing trusts deployed into clusters of 6-8 secondary schools, working alongside local staff on attendance, behaviour, reading and KS3 catch-up. Practitioner-led, not consultancy."
+  },
+  {
+   "id": "strand-2",
+   "label": "Strand 2: Pupil Engagement & Enrichment",
+   "kind": "strand",
+   "text": "A structured enrichment and mentoring offer for every child in the mission areas, coordinated with the national Enrichment Framework and the DCMS \u00a322.5m investment: sport, arts, careers, mentoring, work experience, delivered with anchor partners Right to Succeed, AllChild and Impetus."
+  },
+  {
+   "id": "strand-3",
+   "label": "Strand 3: Test, Learn & Grow",
+   "kind": "strand",
+   "text": "Place-based TLG projects, micro-RCTs and multi-agency pilots, scoped bottom-up with local partners and supported by a Cabinet Office-funded satellite team. The missions as the R&D arm of the English school system."
+  },
+  {
+   "id": "strand-4",
+   "label": "Strand 4: Leadership Capacity",
+   "kind": "strand",
+   "text": "Building the capacity and development of school leaders: place-led, focused on disadvantaged communities, with a long-term pipeline (Leadership Programmes North East plus philanthropic match)."
+  },
+  {
+   "id": "efficacy",
+   "label": "The Efficacy Engine",
+   "kind": "concept",
+   "text": "Teacher \u00d7 pupil \u00d7 parental efficacy, connected by shared culture, strong relationships and accountability. In school, beyond the gate, centred on place."
+  },
+  {
+   "id": "wwc-gap",
+   "label": "White working-class attainment gap",
+   "kind": "theme",
+   "text": "Disadvantaged White British pupils average A8 30.9 vs 48.6 for non-disadvantaged peers: a 17.7-point gap within the same ethnic group. The generational injustice at the centre of the missions."
+  },
+  {
+   "id": "psts",
+   "label": "Performance Support Teams",
+   "kind": "delivery",
+   "text": "~25 specialists @ \u00a3800/day, ~120 days/yr, clusters of 6-8 secondaries. \u00a32.4m/yr: the largest investment."
+  },
+  {
+   "id": "enrichment-framework",
+   "label": "Enrichment Framework + DCMS \u00a322.5m",
+   "kind": "delivery",
+   "text": "National Enrichment Framework rollout in mission areas, complemented by DCMS enrichment funding."
+  },
+  {
+   "id": "dashboard",
+   "label": "Real-time data dashboard",
+   "kind": "delivery",
+   "text": "\u00a3150k/yr for dashboard, impact evaluation and research partnership."
+  },
+  {
+   "id": "right-to-succeed",
+   "label": "Right to Succeed",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "allchild",
+   "label": "AllChild",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "impetus",
+   "label": "Impetus",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "mission-44",
+   "label": "Mission 44",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "dcms",
+   "label": "DCMS",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "shine",
+   "label": "SHINE",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "whatworked",
+   "label": "WhatWorked Education",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "neca",
+   "label": "NECA",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "cabinet-office",
+   "label": "Cabinet Office TLG team",
+   "kind": "partner",
+   "text": "Anchor / funding partner."
+  },
+  {
+   "id": "tlg-rapid-evidence",
+   "label": "National Rapid Evidence Network",
+   "kind": "tlg",
+   "text": "[cross-cutting] Micro-trial infrastructure in mission schools growing into an opt-in rapid evidence network any school in England can join."
+  },
+  {
+   "id": "tlg-early-warning",
+   "label": "Child Engagement Early Warning System",
+   "kind": "tlg",
+   "text": "[cross-cutting] Join DfE attendance with NHS, social care and youth service signals into a single safeguarding-grade view per child, with predictive flags tested at the Y6-7 transition and a tested human response paired to every flag."
+  },
+  {
+   "id": "tlg-family-guarantee",
+   "label": "Family Engagement Guarantee",
+   "kind": "tlg",
+   "text": "[cross-cutting] Trials of structured parental engagement: text-nudges, community parent mentors, family learning, reverse parents\u2019 evenings \u2014 targeting white working-class families reporting the lowest trust in schools."
+  },
+  {
+   "id": "tlg-enrichment-passport",
+   "label": "Enrichment Passport & outcome-linked commissioning",
+   "kind": "tlg",
+   "text": "[cross-cutting] A digital enrichment passport for every mission pupil; providers paid partly on verified participation of disadvantaged pupils."
+  },
+  {
+   "id": "tlg-year7-bridge",
+   "label": "The Year 7 Bridge",
+   "kind": "tlg",
+   "text": "[cross-cutting] The Y6-7 transition as a designed experience: summer bridge on secondary sites, one childhood one record, KS3 engagement curricula, transition mentors from Y9-10."
+  },
+  {
+   "id": "tlg-inclusion-labs",
+   "label": "Inclusion Labs",
+   "kind": "tlg",
+   "text": "[cross-cutting] Volunteer mission schools test inclusive mainstream models the SEND reform programme needs evidence for."
+  },
+  {
+   "id": "tlg-ks3-microtrials",
+   "label": "KS3 Micro-Trial Partnership",
+   "kind": "tlg",
+   "text": "[Sunderland & South Tyneside] Deepen the WhatWorked Education partnership into the country\u2019s first secondary classroom-practice trial unit embedded in PST cluster schools; every PST intervention becomes a trial arm."
+  },
+  {
+   "id": "tlg-ne-pathways",
+   "label": "\u201cMade in the North East\u201d industry pathways",
+   "kind": "tlg",
+   "text": "[North East] Employer-embedded enrichment at scale using advanced manufacturing, electrification, offshore energy and Crown Works Studios: workplace encounters from Y7, employer-sponsored KS3 projects, technical tasters."
+  },
+  {
+   "id": "tlg-every-mover",
+   "label": "\u201cEvery Mover Known\u201d",
+   "kind": "tlg",
+   "text": "[Hastings] Rapid-integration protocol for mid-year movers (48-hour records transfer, automatic enrichment and mentoring enrolment, named integration lead) plus a coastal workforce premium trial."
+  },
+  {
+   "id": "tlg-year-round-coast",
+   "label": "\u201cThe Year-Round Coast\u201d",
+   "kind": "tlg",
+   "text": "[Scarborough] Year-round opportunity model for a seasonal economy: holiday enrichment, paid summer roles with tourism/offshore wind/marine sectors, a coastal curriculum, school-year scheduling flexibilities."
+  },
+  {
+   "id": "attendance",
+   "label": "Attendance & persistent absence",
+   "kind": "theme",
+   "text": "Secondary PA: South Tyneside 28.2%, Sunderland 28.4%, Hastings 31.9% vs England 23.4%. Daily monitoring, family liaison and PA protocols are core tactics."
+  },
+  {
+   "id": "neet-dest",
+   "label": "NEET & destinations",
+   "kind": "theme",
+   "text": "16-17 NEET-or-not-known: Sunderland 6.7%, South Tyneside 5.6% vs England 5.6%. Fewer NEETs and stronger post-16 progression is a mission objective."
+  },
+  {
+   "id": "ks2-weakness",
+   "label": "Primary attainment (KS2)",
+   "kind": "theme",
+   "text": "Scarborough RWM 57% vs national ~61-62%; over half of MCS primaries below national average. Maths is the binding constraint; the girls\u2019 advantage has vanished."
+  },
+  {
+   "id": "churn",
+   "label": "Pupil mobility & churn",
+   "kind": "theme",
+   "text": "Hastings: ~10% of secondary-age pupils in elective home education, 928 (14.7%) out of or at risk of being out of provision. Housing insecurity drives mid-year moves."
+  },
+  {
+   "id": "seasonal",
+   "label": "Seasonal coastal economy",
+   "kind": "theme",
+   "text": "Scarborough: disadvantage concentrates in winter, disengagement in summer. Biggest employer Anglo American; rest mostly tourism and hospitality."
+  },
+  {
+   "id": "parental",
+   "label": "Parental engagement",
+   "kind": "theme",
+   "text": "White working-class families report the lowest trust in schools: the single biggest evidence gap named in the missions\u2019 TLG remit."
+  },
+  {
+   "id": "transition",
+   "label": "Y6-7 transition",
+   "kind": "theme",
+   "text": "Risk concentrates at the Year 6 to 7 transition where data fractures across systems."
+  },
+  {
+   "id": "governance",
+   "label": "Governance: Partnership Board + Operational Boards",
+   "kind": "delivery",
+   "text": "Governance board chaired by the Minister; local operational boards for each mission underneath. Youth Advisory Board for Mission NE."
+  },
+  {
+   "id": "budget",
+   "label": "\u00a34.2m annual DfE envelope",
+   "kind": "delivery",
+   "text": "Covers both missions; philanthropic and partner contributions handled in a parallel workstream."
+  }
+ ],
+ "edges": [
+  {
+   "from": "vision",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "vision",
+   "to": "mission-coastal",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "sunderland",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "south-tyneside",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "scarborough",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "hastings",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "mission-ne",
+   "to": "strand-4",
+   "label": ""
+  },
+  {
+   "from": "mission-coastal",
+   "to": "strand-4",
+   "label": ""
+  },
+  {
+   "from": "efficacy",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "efficacy",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "efficacy",
+   "to": "strand-4",
+   "label": ""
+  },
+  {
+   "from": "wwc-gap",
+   "to": "sunderland",
+   "label": ""
+  },
+  {
+   "from": "wwc-gap",
+   "to": "south-tyneside",
+   "label": ""
+  },
+  {
+   "from": "wwc-gap",
+   "to": "scarborough",
+   "label": ""
+  },
+  {
+   "from": "wwc-gap",
+   "to": "hastings",
+   "label": ""
+  },
+  {
+   "from": "psts",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "enrichment-framework",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "dashboard",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "dashboard",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "right-to-succeed",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "allchild",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "impetus",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "dcms",
+   "to": "enrichment-framework",
+   "label": ""
+  },
+  {
+   "from": "mission-44",
+   "to": "mission-ne",
+   "label": "Youth Advisory Board"
+  },
+  {
+   "from": "shine",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "neca",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "whatworked",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "cabinet-office",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-rapid-evidence",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-early-warning",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-family-guarantee",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-enrichment-passport",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-year7-bridge",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-inclusion-labs",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-ks3-microtrials",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-ne-pathways",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-every-mover",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-year-round-coast",
+   "to": "strand-3",
+   "label": ""
+  },
+  {
+   "from": "tlg-ks3-microtrials",
+   "to": "sunderland",
+   "label": ""
+  },
+  {
+   "from": "tlg-ks3-microtrials",
+   "to": "south-tyneside",
+   "label": ""
+  },
+  {
+   "from": "tlg-ne-pathways",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "tlg-every-mover",
+   "to": "hastings",
+   "label": ""
+  },
+  {
+   "from": "tlg-year-round-coast",
+   "to": "scarborough",
+   "label": ""
+  },
+  {
+   "from": "tlg-ks3-microtrials",
+   "to": "whatworked",
+   "label": ""
+  },
+  {
+   "from": "attendance",
+   "to": "strand-1",
+   "label": ""
+  },
+  {
+   "from": "attendance",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "neet-dest",
+   "to": "strand-2",
+   "label": ""
+  },
+  {
+   "from": "neet-dest",
+   "to": "tlg-early-warning",
+   "label": ""
+  },
+  {
+   "from": "ks2-weakness",
+   "to": "scarborough",
+   "label": ""
+  },
+  {
+   "from": "churn",
+   "to": "hastings",
+   "label": ""
+  },
+  {
+   "from": "churn",
+   "to": "tlg-every-mover",
+   "label": ""
+  },
+  {
+   "from": "seasonal",
+   "to": "scarborough",
+   "label": ""
+  },
+  {
+   "from": "seasonal",
+   "to": "tlg-year-round-coast",
+   "label": ""
+  },
+  {
+   "from": "parental",
+   "to": "tlg-family-guarantee",
+   "label": ""
+  },
+  {
+   "from": "parental",
+   "to": "efficacy",
+   "label": ""
+  },
+  {
+   "from": "transition",
+   "to": "tlg-year7-bridge",
+   "label": ""
+  },
+  {
+   "from": "transition",
+   "to": "tlg-early-warning",
+   "label": ""
+  },
+  {
+   "from": "attendance",
+   "to": "sunderland",
+   "label": ""
+  },
+  {
+   "from": "attendance",
+   "to": "south-tyneside",
+   "label": ""
+  },
+  {
+   "from": "attendance",
+   "to": "hastings",
+   "label": ""
+  },
+  {
+   "from": "governance",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "governance",
+   "to": "mission-coastal",
+   "label": ""
+  },
+  {
+   "from": "budget",
+   "to": "mission-ne",
+   "label": ""
+  },
+  {
+   "from": "budget",
+   "to": "mission-coastal",
+   "label": ""
+  },
+  {
+   "from": "budget",
+   "to": "psts",
+   "label": ""
+  }
+ ]
+}
