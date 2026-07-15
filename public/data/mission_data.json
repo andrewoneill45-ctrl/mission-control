@@ -7526,6 +7526,10 @@
        }
       ]
      }
+    ],
+    "metrics": [
+     "out-3",
+     "fw-Attainment & Academic Progress-5"
     ]
    },
    {
@@ -7545,6 +7549,11 @@
        }
       ]
      }
+    ],
+    "metrics": [
+     "fw-Attainment & Academic Progress-0",
+     "fw-Attainment & Academic Progress-1",
+     "fw-Attainment & Academic Progress-2"
     ]
    },
    {
@@ -7564,6 +7573,11 @@
        }
       ]
      }
+    ],
+    "metrics": [
+     "out-0",
+     "out-5",
+     "fw-Attendance & Engagement-1"
     ]
    },
    {
@@ -7583,6 +7597,11 @@
        }
       ]
      }
+    ],
+    "metrics": [
+     "out-1",
+     "out-2",
+     "col-2"
     ]
    },
    {
@@ -7602,6 +7621,11 @@
        }
       ]
      }
+    ],
+    "metrics": [
+     "out-6",
+     "out-4",
+     "fw-Destinations & NEET-0"
     ]
    }
   ]

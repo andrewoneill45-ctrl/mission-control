@@ -1,6 +1,8 @@
-// VMOST planner: collapsible Objectives → Strategies → Tactics with AI suggestions.
-import { useEffect, useRef, useState } from 'react';
-import { useData, askApi, loadVmost, saveVmost, uid, download } from '../data.jsx';
+// VMOST planner: collapsible Objectives → Strategies → Tactics with AI suggestions,
+// with metrics from the KPI framework linked to each objective (drives the Metrics page).
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useData, askApi, loadVmost, saveVmost, uid, download, loadRag, metricCatalog, suggestMetrics } from '../data.jsx';
 import AiAnswer, { extractJson } from '../components/AiAnswer.jsx';
 import SharedBar from '../components/SharedBar.jsx';
 import { PrintHeader, PrintButton, Bars, Stat } from '../components/ui.jsx';
@@ -13,7 +15,10 @@ export default function Vmost() {
   const [aiError, setAiError] = useState(null);
   const [impact, setImpact] = useState(null);
   const [impactLoading, setImpactLoading] = useState(false);
+  const [pickingFor, setPickingFor] = useState(null); // objective id whose metric picker is open
   const fileRef = useRef(null);
+  const catalog = useMemo(() => metricCatalog(data), [data]);
+  const rag = loadRag(); // snapshot: RAG health dots on metric chips
 
   useEffect(() => { saveVmost(plan); }, [plan]);
 
@@ -49,6 +54,10 @@ export default function Vmost() {
     t.open = !t.open;
   });
   const setAllOpen = (v) => update((c) => c.objectives.forEach((o) => { o.open = v; o.strategies.forEach((s) => { s.open = v; }); }));
+  const setMetrics = (oid, ids) => update((c) => { c.objectives.find((x) => x.id === oid).metrics = ids; });
+  const autoLinkAll = () => update((c) => c.objectives.forEach((o) => {
+    if (!(o.metrics || []).length) o.metrics = suggestMetrics(`${o.title} ${o.detail || ''}`, catalog).slice(0, 6);
+  }));
 
   // ----- AI -----
   const suggestObjectives = async () => {
@@ -79,7 +88,9 @@ export default function Vmost() {
   const simulateImpact = async () => {
     setImpactLoading(true); setImpact(null); setAiError(null);
     try {
+      const byId = Object.fromEntries(catalog.map((m) => [m.id, m]));
       const summary = plan.objectives.map((o) => `OBJECTIVE: ${o.title} — ${o.detail}\n` +
+        ((o.metrics || []).length ? `  TRACKED BY: ${o.metrics.filter((id) => byId[id]).map((id) => `${byId[id].label}${rag[id]?.rag && rag[id].rag !== '—' ? ` [${rag[id].rag}]` : ''}`).join('; ')}\n` : '') +
         o.strategies.map((s) => `  STRATEGY: ${s.title} — ${s.detail}\n` + s.tactics.map((t) => `    TACTIC: ${t.title}`).join('\n')).join('\n')).join('\n');
       const res = await askApi({ mode: 'impact', question: 'Model the intended impact of this VMOST plan on the mission areas.', context: summary });
       if (res.error) throw new Error(res.error === 'no_key' ? 'No ANTHROPIC_API_KEY set in Netlify environment variables.' : res.detail || res.error);
@@ -124,6 +135,7 @@ export default function Vmost() {
         <button className="btn" onClick={simulateImpact} disabled={impactLoading || !plan.objectives.length}>
           {impactLoading ? <><span className="spinner" /> Modelling…</> : '≋ Simulate intended impact'}
         </button>
+        <button className="btn" onClick={autoLinkAll} title="Link each objective without metrics to the KPI framework by keyword">⚑ Auto-link metrics</button>
         <span style={{ flex: 1 }} />
         <button className="btn sm ghost" onClick={() => setAllOpen(true)}>Expand all</button>
         <button className="btn sm ghost" onClick={() => setAllOpen(false)}>Collapse all</button>
@@ -154,12 +166,13 @@ export default function Vmost() {
       )}
 
       {plan.objectives.map((o) => (
-        <ObjectiveNode key={o.id} o={o}
+        <ObjectiveNode key={o.id} o={o} catalog={catalog} rag={rag}
           onToggle={() => toggle(o.id)}
           onEdit={(f, v) => editNode(o.id, null, null, f, v)}
           onRemove={() => removeNode(o.id)}
           onAddStrategy={() => addStrategy(o.id)}
           onSuggestPlan={() => suggestPlanFor(o)}
+          onPickMetrics={() => setPickingFor(o.id)}
           strategyHandlers={{
             toggle: (sid) => toggle(o.id, sid),
             edit: (sid, tid, f, v) => editNode(o.id, sid, tid, f, v),
@@ -168,6 +181,15 @@ export default function Vmost() {
           }}
         />
       ))}
+
+      {pickingFor && (
+        <MetricPicker
+          objective={plan.objectives.find((o) => o.id === pickingFor)}
+          catalog={catalog}
+          onSave={(ids) => { setMetrics(pickingFor, ids); setPickingFor(null); }}
+          onCancel={() => setPickingFor(null)}
+        />
+      )}
 
       {impact && (
         <>
@@ -261,29 +283,99 @@ function Editable({ value, onChange, className, placeholder }) {
   );
 }
 
-function ObjectiveNode({ o, onToggle, onEdit, onRemove, onAddStrategy, onSuggestPlan, strategyHandlers }) {
+const RAG_DOT = { R: 'var(--crimson)', A: 'var(--amber)', G: 'var(--green)' };
+
+function objectiveHealth(o, rag) {
+  const vals = (o.metrics || []).map((id) => rag[id]?.rag).filter((x) => x && x !== '—');
+  if (!vals.length) return null;
+  return vals.includes('R') ? 'R' : vals.includes('A') ? 'A' : 'G';
+}
+
+function ObjectiveNode({ o, catalog, rag, onToggle, onEdit, onRemove, onAddStrategy, onSuggestPlan, onPickMetrics, strategyHandlers }) {
+  const byId = Object.fromEntries(catalog.map((m) => [m.id, m]));
+  const linked = (o.metrics || []).filter((id) => byId[id]);
+  const health = objectiveHealth(o, rag);
   return (
-    <div className="vm-node">
+    <div className="vm-node" style={health ? { borderLeft: `4px solid ${RAG_DOT[health]}` } : undefined}>
       <div className="vm-head" onClick={onToggle}>
         <span className={`chev ${o.open ? 'open' : ''}`}>▶</span>
         <span className="vm-tag O">OBJ</span>
         <span className="vm-title"><Editable value={o.title} onChange={(v) => onEdit('title', v)} placeholder="Objective title" /></span>
-        <span className="sub" style={{ fontSize: 11 }}>{o.strategies.length} strategies</span>
+        {health && <span className="pill" style={{ color: RAG_DOT[health], borderColor: RAG_DOT[health] }}>{{ R: 'Off track', A: 'At risk', G: 'On track' }[health]}</span>}
+        <span className="sub" style={{ fontSize: 11 }}>{o.strategies.length} strategies · {linked.length} metrics</span>
         <span className="vm-actions" onClick={(e) => e.stopPropagation()}>
           <button className="btn sm" onClick={onAddStrategy}>+ Strategy</button>
           <button className="btn sm" onClick={onSuggestPlan} disabled={o.planning}>{o.planning ? '…' : '✦ Suggest S+T'}</button>
+          <button className="btn sm" onClick={onPickMetrics}>⚑ Metrics</button>
           <button className="btn sm danger" onClick={onRemove}>✕</button>
         </span>
       </div>
       {o.open && (
         <>
           <div className="vm-detail"><Editable value={o.detail} onChange={(v) => onEdit('detail', v)} placeholder="Add detail…" /></div>
+          {linked.length > 0 && (
+            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', padding: '0 14px 11px 38px' }}>
+              {linked.map((id) => {
+                const st = rag[id]?.rag;
+                return (
+                  <Link key={id} to="/metrics" className="pill" title={`${byId[id].group}${st && st !== '—' ? ` · currently ${st}` : ' · not yet rated'} — open the tracker`}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                    <i style={{ width: 7, height: 7, borderRadius: 2, background: RAG_DOT[st] || 'var(--ink3)', display: 'inline-block' }} />
+                    {byId[id].label.slice(0, 38)}
+                  </Link>
+                );
+              })}
+            </div>
+          )}
           <div className="vm-children">
             {o.strategies.map((s) => <StrategyNode key={s.id} s={s} h={strategyHandlers} />)}
             {!o.strategies.length && <div className="sub" style={{ fontSize: 12 }}>No strategies yet — add one, or let Claude suggest strategies and tactics.</div>}
           </div>
         </>
       )}
+    </div>
+  );
+}
+
+function MetricPicker({ objective, catalog, onSave, onCancel }) {
+  const [ids, setIds] = useState(() => new Set(objective.metrics || []));
+  const [q, setQ] = useState('');
+  const groups = [...new Set(catalog.map((m) => m.group))];
+  const toggle = (id) => setIds((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
+  const auto = () => setIds(new Set([...ids, ...suggestMetrics(`${objective.title} ${objective.detail || ''}`, catalog)]));
+  const match = (m) => !q || m.label.toLowerCase().includes(q.toLowerCase());
+  return (
+    <div className="conn-modal" style={{ position: 'fixed', inset: 0, zIndex: 90 }}>
+      <div className="card" style={{ width: 620, maxWidth: '94vw', maxHeight: '84vh', display: 'flex', flexDirection: 'column' }}>
+        <h4 style={{ marginBottom: 4 }}>Metrics for: {objective.title}</h4>
+        <div className="sub" style={{ fontSize: 12, marginBottom: 10 }}>Linked metrics drive this objective's RAG health here and on the Metrics page.</div>
+        <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
+          <input autoFocus className="field" placeholder="Search metrics…" value={q} onChange={(e) => setQ(e.target.value)} />
+          <button className="btn" onClick={auto}>✦ Auto-suggest</button>
+        </div>
+        <div style={{ overflowY: 'auto', flex: 1 }}>
+          {groups.map((g) => {
+            const rows = catalog.filter((m) => m.group === g && match(m));
+            if (!rows.length) return null;
+            return (
+              <div key={g} style={{ marginBottom: 8 }}>
+                <div className="sub" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.8, margin: '6px 0 3px' }}>{g}</div>
+                {rows.map((m) => (
+                  <label key={m.id} style={{ display: 'flex', gap: 8, alignItems: 'center', padding: '4px 2px', fontSize: 12.6, cursor: 'pointer' }}>
+                    <input type="checkbox" checked={ids.has(m.id)} onChange={() => toggle(m.id)} />
+                    <span>{m.label}</span>
+                    {m.target && <span className="sub" style={{ fontSize: 10.8, marginLeft: 'auto' }}>Y3: {String(m.target).slice(0, 42)}</span>}
+                  </label>
+                ))}
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+          <button className="btn primary" onClick={() => onSave([...ids])}>Save ({ids.size} linked)</button>
+          <button className="btn ghost" onClick={onCancel}>Cancel</button>
+        </div>
+      </div>
     </div>
   );
 }

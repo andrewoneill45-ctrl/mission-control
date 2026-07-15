@@ -115,11 +115,17 @@ describe('Mission Control pages', () => {
     expect(container.textContent).toContain('Expand all');
     expect(container.textContent).toContain('Print / PDF');
   });
-  it('Metrics tracker renders KPIs', async () => {
+  it('Metrics tracker renders KPIs and plan section', async () => {
     const { container } = await renderAt('/metrics');
     await waitFor(() => expect(container.textContent).toContain('Metrics & KPI Tracker'));
     expect(container.textContent).toContain('Outcome KPIs');
     expect(container.textContent).toContain('Persistent absence rate');
+    expect(container.textContent).toContain('The plan, measured');
+  });
+  it('VMOST has metric linking controls', async () => {
+    const { container } = await renderAt('/vmost');
+    await waitFor(() => expect(container.textContent).toContain('Auto-link metrics'));
+    expect(container.textContent).toContain('⚑ Metrics');
   });
   it('Simulator shows costed policy levers', async () => {
     const { container } = await renderAt('/simulator');
